@@ -1,0 +1,21 @@
+sku,product_name,category,unit_cost,list_price
+SKU01,Maize Flour 2kg,Staples,138,169
+SKU02,Pishori Rice 2kg,Staples,310,389
+SKU03,Sugar 2kg,Staples,255,299
+SKU04,Cooking Oil 1L,Staples,235,289
+SKU05,Fresh Milk 500ml,Dairy and Eggs,48,60
+SKU06,Yoghurt 500ml,Dairy and Eggs,85,119
+SKU07,Eggs Tray 30,Dairy and Eggs,390,460
+SKU08,Tea Leaves 500g,Beverages,175,239
+SKU09,Instant Coffee 100g,Beverages,290,399
+SKU10,Soda 2L,Beverages,95,130
+SKU11,Bottled Water 1.5L,Beverages,48,75
+SKU12,Laundry Soap Bar,Household,85,119
+SKU13,Detergent 1kg,Household,260,349
+SKU14,Toilet Tissue 10pk,Household,215,299
+SKU15,Bath Soap 175g,Personal Care,62,95
+SKU16,Toothpaste 100ml,Personal Care,110,165
+SKU17,Body Lotion 400ml,Personal Care,240,355
+SKU18,Bread 400g,Snacks and Bakery,52,65
+SKU19,Biscuits 200g,Snacks and Bakery,58,85
+SKU20,Chocolate Bar,Snacks and Bakery,62,95

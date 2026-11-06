@@ -1,0 +1,1001 @@
+customer_id,age,gender,county,occupation,monthly_income_ksh,signup_date,kyc_level,segment
+C0001,36,F,Machakos,Trader,58800,2022-06-03,Standard,Mid
+C0002,28,M,Nakuru,Salaried,143200,2023-07-08,Standard,Affluent
+C0003,23,M,Kiambu,Self-employed,65400,2024-04-01,Basic,Mid
+C0004,23,M,Nakuru,Farmer,19500,2022-01-09,Standard,Mass
+C0005,38,F,Nakuru,Student,14800,2023-02-02,Full,Mass
+C0006,41,F,Nyeri,Salaried,58100,2024-03-01,Basic,Mid
+C0007,37,F,Nakuru,Salaried,53600,2023-04-16,Basic,Mid
+C0008,25,M,Nairobi,Salaried,95300,2022-09-20,Full,Affluent
+C0009,46,M,Nairobi,Self-employed,86500,2023-01-16,Standard,Affluent
+C0010,28,F,Kisii,Salaried,33600,2022-05-01,Basic,Mid
+C0011,26,M,Nairobi,Trader,57400,2024-05-13,Standard,Mid
+C0012,29,F,Nairobi,Trader,42100,2022-05-17,Standard,Mid
+C0013,37,F,Eldoret,Salaried,77900,2023-11-28,Full,Affluent
+C0014,18,F,Kisumu,Trader,28100,2022-06-12,Standard,Mid
+C0015,23,F,Nairobi,Salaried,44400,2023-07-14,Standard,Mid
+C0016,49,M,Nakuru,Self-employed,46000,2023-09-02,Standard,Mid
+C0017,26,M,Nakuru,Student,14400,2022-07-24,Basic,Mass
+C0018,23,F,Nairobi,Farmer,23300,2024-01-31,Basic,Mass
+C0019,24,M,Kiambu,Trader,34700,2022-05-08,Basic,Mid
+C0020,19,F,Mombasa,Self-employed,74900,2024-04-27,Standard,Affluent
+C0021,34,F,Machakos,Salaried,48400,2024-06-16,Basic,Mid
+C0022,31,M,Nairobi,Self-employed,27600,2023-04-04,Full,Mid
+C0023,38,M,Kiambu,Salaried,75200,2024-02-27,Standard,Affluent
+C0024,18,F,Machakos,Boda rider,18100,2024-03-16,Basic,Mass
+C0025,40,M,Kisumu,Salaried,68000,2022-11-22,Basic,Mid
+C0026,28,M,Eldoret,Salaried,93600,2022-03-25,Basic,Affluent
+C0027,49,F,Machakos,Farmer,18100,2023-09-13,Full,Mass
+C0028,18,F,Kiambu,Salaried,52000,2022-11-29,Standard,Mid
+C0029,36,M,Kisumu,Salaried,39200,2023-04-15,Standard,Mid
+C0030,26,M,Machakos,Salaried,61800,2023-04-07,Standard,Mid
+C0031,24,M,Machakos,Self-employed,40800,2023-10-16,Standard,Mid
+C0032,32,M,Eldoret,Salaried,33200,2022-12-30,Standard,Mid
+C0033,33,M,Nairobi,Boda rider,24900,2024-02-09,Standard,Mass
+C0034,18,M,Machakos,Salaried,89000,2022-05-13,Full,Affluent
+C0035,28,F,Nairobi,Farmer,15500,2022-03-21,Standard,Mass
+C0036,57,F,Kisumu,Self-employed,57600,2023-01-28,Full,Mid
+C0037,29,M,Eldoret,Self-employed,41800,2023-10-01,Basic,Mid
+C0038,46,F,Mombasa,Student,6000,2023-02-15,Full,Mass
+C0039,21,F,Kisumu,Boda rider,44000,2023-06-24,Standard,Mid
+C0040,34,F,Kakamega,Salaried,73700,2022-11-22,Basic,Affluent
+C0041,53,M,Mombasa,Salaried,65700,2023-01-23,Full,Mid
+C0042,39,F,Mombasa,Salaried,48000,2023-07-10,Standard,Mid
+C0043,25,F,Kisii,Boda rider,14100,2024-03-14,Basic,Mass
+C0044,21,M,Nairobi,Trader,52800,2023-08-13,Full,Mid
+C0045,37,F,Kiambu,Self-employed,41400,2023-02-20,Standard,Mid
+C0046,30,F,Nairobi,Boda rider,51200,2023-07-25,Basic,Mid
+C0047,31,M,Nairobi,Self-employed,41200,2022-11-08,Standard,Mid
+C0048,19,M,Nairobi,Trader,34100,2024-04-18,Basic,Mid
+C0049,45,F,Kisii,Salaried,59500,2023-07-22,Basic,Mid
+C0050,21,F,Nairobi,Salaried,57400,2023-12-17,Standard,Mid
+C0051,32,M,Nakuru,Trader,44800,2022-12-20,Basic,Mid
+C0052,34,F,Mombasa,Self-employed,51700,2023-11-03,Basic,Mid
+C0053,44,M,Nairobi,Self-employed,55800,2023-10-27,Basic,Mid
+C0054,27,F,Kiambu,Salaried,51200,2024-05-25,Basic,Mid
+C0055,18,F,Nyeri,Salaried,106600,2024-04-16,Standard,Affluent
+C0056,35,M,Kiambu,Trader,39900,2023-05-27,Standard,Mid
+C0057,31,F,Kisumu,Self-employed,47500,2022-10-06,Full,Mid
+C0058,21,M,Nairobi,Self-employed,55100,2022-08-24,Basic,Mid
+C0059,28,M,Mombasa,Salaried,45000,2022-06-03,Full,Mid
+C0060,35,F,Eldoret,Self-employed,46100,2024-04-20,Standard,Mid
+C0061,40,F,Kisii,Trader,42200,2022-05-27,Standard,Mid
+C0062,42,F,Nakuru,Self-employed,58700,2024-02-06,Full,Mid
+C0063,44,M,Nakuru,Self-employed,99500,2022-07-02,Standard,Affluent
+C0064,41,F,Mombasa,Student,11500,2022-05-09,Standard,Mass
+C0065,27,F,Nakuru,Salaried,71900,2024-04-06,Full,Affluent
+C0066,34,M,Eldoret,Self-employed,38200,2022-08-21,Standard,Mid
+C0067,31,F,Nairobi,Self-employed,82900,2024-06-29,Standard,Affluent
+C0068,26,F,Nairobi,Trader,35700,2024-02-10,Basic,Mid
+C0069,18,F,Nairobi,Salaried,127100,2022-10-16,Basic,Affluent
+C0070,31,F,Nairobi,Salaried,34400,2023-09-17,Standard,Mid
+C0071,40,F,Nairobi,Salaried,104400,2023-09-20,Basic,Affluent
+C0072,26,M,Kisii,Salaried,59000,2023-05-30,Full,Mid
+C0073,40,M,Machakos,Self-employed,49800,2022-04-18,Basic,Mid
+C0074,30,F,Machakos,Self-employed,36200,2023-03-09,Standard,Mid
+C0075,36,M,Mombasa,Boda rider,34000,2023-10-17,Basic,Mid
+C0076,33,F,Mombasa,Salaried,97000,2024-02-25,Basic,Affluent
+C0077,44,M,Mombasa,Trader,24700,2022-03-20,Basic,Mass
+C0078,30,F,Mombasa,Self-employed,58500,2024-02-21,Standard,Mid
+C0079,59,M,Machakos,Trader,30500,2024-06-25,Full,Mid
+C0080,37,F,Nairobi,Salaried,70500,2022-12-19,Basic,Affluent
+C0081,23,F,Mombasa,Farmer,27000,2022-12-10,Standard,Mid
+C0082,32,F,Kisumu,Self-employed,34900,2023-08-16,Basic,Mid
+C0083,22,F,Machakos,Self-employed,28200,2022-05-04,Standard,Mid
+C0084,32,M,Nakuru,Trader,36700,2023-10-10,Basic,Mid
+C0085,28,M,Eldoret,Salaried,83400,2022-02-18,Standard,Affluent
+C0086,48,M,Nairobi,Self-employed,35300,2022-12-30,Full,Mid
+C0087,45,M,Kisumu,Salaried,62600,2023-05-02,Basic,Mid
+C0088,39,F,Nairobi,Trader,48500,2024-04-09,Standard,Mid
+C0089,30,M,Nyeri,Salaried,50600,2022-01-18,Standard,Mid
+C0090,36,F,Nairobi,Salaried,41700,2023-02-05,Standard,Mid
+C0091,32,F,Machakos,Salaried,55300,2024-04-29,Standard,Mid
+C0092,54,M,Mombasa,Salaried,83400,2023-05-09,Full,Affluent
+C0093,39,F,Kiambu,Trader,38800,2023-12-22,Standard,Mid
+C0094,37,F,Mombasa,Salaried,99400,2024-01-21,Full,Affluent
+C0095,27,M,Eldoret,Farmer,15700,2023-08-01,Standard,Mass
+C0096,27,M,Nairobi,Salaried,145800,2023-08-28,Basic,Affluent
+C0097,25,M,Mombasa,Student,13100,2023-04-08,Standard,Mass
+C0098,34,F,Nyeri,Trader,30400,2023-04-16,Standard,Mid
+C0099,45,F,Nakuru,Salaried,103400,2022-12-03,Standard,Affluent
+C0100,20,M,Kisii,Trader,33300,2023-03-08,Full,Mid
+C0101,25,M,Nairobi,Salaried,49700,2022-05-16,Full,Mid
+C0102,27,M,Nairobi,Self-employed,45300,2023-07-22,Basic,Mid
+C0103,47,M,Nyeri,Salaried,25800,2023-12-06,Standard,Mid
+C0104,44,F,Nairobi,Salaried,81600,2022-10-21,Basic,Affluent
+C0105,38,F,Kakamega,Trader,36600,2023-04-17,Basic,Mid
+C0106,32,M,Eldoret,Self-employed,45600,2022-09-28,Standard,Mid
+C0107,25,M,Mombasa,Salaried,43400,2023-02-20,Full,Mid
+C0108,47,M,Nairobi,Boda rider,45800,2022-03-10,Basic,Mid
+C0109,26,M,Eldoret,Salaried,61800,2023-05-26,Full,Mid
+C0110,36,F,Kiambu,Self-employed,46300,2022-08-07,Standard,Mid
+C0111,38,M,Nairobi,Salaried,83500,2022-09-09,Full,Affluent
+C0112,32,F,Nairobi,Self-employed,43900,2022-04-20,Standard,Mid
+C0113,48,F,Nairobi,Farmer,20000,2023-03-05,Standard,Mass
+C0114,39,M,Nairobi,Salaried,85900,2024-03-14,Basic,Affluent
+C0115,18,F,Nairobi,Boda rider,34900,2022-06-04,Full,Mid
+C0116,40,F,Kisii,Trader,48000,2023-08-26,Full,Mid
+C0117,21,F,Nairobi,Trader,48100,2023-01-21,Basic,Mid
+C0118,21,F,Nairobi,Boda rider,27300,2022-10-16,Basic,Mid
+C0119,35,F,Nairobi,Self-employed,38600,2024-06-22,Standard,Mid
+C0120,45,F,Kiambu,Salaried,61600,2022-05-08,Standard,Mid
+C0121,38,M,Eldoret,Trader,72300,2022-12-01,Standard,Affluent
+C0122,33,F,Nairobi,Trader,35300,2024-03-22,Basic,Mid
+C0123,33,F,Nairobi,Farmer,35000,2022-09-03,Full,Mid
+C0124,33,M,Kisumu,Salaried,50000,2022-01-12,Basic,Mid
+C0125,32,F,Kiambu,Salaried,70900,2023-06-14,Basic,Affluent
+C0126,18,M,Nairobi,Student,9200,2024-01-28,Basic,Mass
+C0127,43,F,Nairobi,Trader,42400,2022-02-06,Basic,Mid
+C0128,18,M,Nakuru,Salaried,53300,2022-12-24,Basic,Mid
+C0129,31,F,Nairobi,Self-employed,29500,2022-06-19,Standard,Mid
+C0130,46,M,Nyeri,Self-employed,48200,2022-05-29,Basic,Mid
+C0131,40,F,Mombasa,Salaried,88700,2023-11-18,Standard,Affluent
+C0132,27,M,Nairobi,Trader,31300,2022-05-04,Basic,Mid
+C0133,48,M,Nairobi,Salaried,53000,2022-05-31,Full,Mid
+C0134,47,M,Machakos,Salaried,54700,2023-07-19,Basic,Mid
+C0135,26,F,Machakos,Salaried,54400,2023-05-03,Full,Mid
+C0136,33,F,Nairobi,Self-employed,71900,2022-03-29,Standard,Affluent
+C0137,34,F,Nairobi,Trader,41500,2022-01-08,Standard,Mid
+C0138,32,M,Nairobi,Boda rider,25200,2022-04-12,Full,Mid
+C0139,33,F,Machakos,Salaried,42900,2024-02-07,Basic,Mid
+C0140,35,F,Nairobi,Salaried,105600,2023-10-13,Standard,Affluent
+C0141,47,F,Kakamega,Salaried,60800,2022-04-27,Standard,Mid
+C0142,35,F,Mombasa,Salaried,57100,2023-10-04,Full,Mid
+C0143,50,M,Nyeri,Salaried,41400,2023-08-15,Standard,Mid
+C0144,30,F,Eldoret,Salaried,78500,2024-02-26,Standard,Affluent
+C0145,32,M,Kiambu,Student,12800,2023-08-26,Standard,Mass
+C0146,52,M,Kisumu,Boda rider,27700,2022-08-06,Full,Mid
+C0147,18,F,Nairobi,Salaried,36700,2022-10-03,Basic,Mid
+C0148,28,F,Nairobi,Farmer,14300,2023-06-19,Standard,Mass
+C0149,29,F,Nairobi,Salaried,57400,2023-11-11,Basic,Mid
+C0150,37,F,Nairobi,Trader,86700,2022-06-17,Standard,Affluent
+C0151,38,F,Nakuru,Self-employed,52300,2023-12-24,Basic,Mid
+C0152,23,M,Mombasa,Self-employed,71500,2022-11-03,Standard,Affluent
+C0153,37,F,Kakamega,Salaried,125900,2022-08-12,Standard,Affluent
+C0154,21,F,Nairobi,Trader,65400,2022-06-25,Standard,Mid
+C0155,18,M,Eldoret,Student,12800,2022-03-29,Standard,Mass
+C0156,37,M,Nairobi,Boda rider,14800,2022-04-08,Basic,Mass
+C0157,48,F,Nairobi,Farmer,27400,2022-01-14,Full,Mid
+C0158,40,M,Mombasa,Self-employed,70100,2023-09-04,Standard,Affluent
+C0159,28,F,Kisii,Student,13900,2022-10-08,Standard,Mass
+C0160,29,M,Nairobi,Boda rider,23700,2022-04-06,Basic,Mass
+C0161,35,M,Eldoret,Trader,25300,2024-04-22,Standard,Mid
+C0162,18,M,Mombasa,Boda rider,34400,2023-08-22,Standard,Mid
+C0163,31,M,Nakuru,Salaried,96900,2022-02-16,Basic,Affluent
+C0164,27,F,Nakuru,Salaried,65100,2023-12-06,Basic,Mid
+C0165,36,F,Kiambu,Boda rider,26100,2023-10-16,Full,Mid
+C0166,38,F,Kisumu,Salaried,73400,2023-04-17,Standard,Affluent
+C0167,21,M,Nairobi,Salaried,40000,2022-09-22,Standard,Mid
+C0168,37,M,Eldoret,Self-employed,43600,2024-04-14,Standard,Mid
+C0169,26,F,Nyeri,Trader,38800,2023-05-25,Standard,Mid
+C0170,21,M,Kiambu,Trader,24500,2024-01-05,Full,Mass
+C0171,37,M,Nairobi,Trader,51100,2023-09-20,Standard,Mid
+C0172,36,F,Kakamega,Farmer,25300,2022-01-09,Standard,Mid
+C0173,33,M,Eldoret,Boda rider,35300,2023-01-15,Basic,Mid
+C0174,38,F,Kisumu,Salaried,38500,2024-05-09,Basic,Mid
+C0175,41,M,Nairobi,Boda rider,31000,2023-06-06,Standard,Mid
+C0176,40,M,Nairobi,Trader,28800,2023-10-18,Standard,Mid
+C0177,37,M,Kiambu,Boda rider,31200,2022-01-31,Standard,Mid
+C0178,25,M,Kiambu,Self-employed,38700,2023-09-23,Standard,Mid
+C0179,20,M,Nairobi,Self-employed,60400,2023-04-02,Basic,Mid
+C0180,18,F,Mombasa,Salaried,151400,2023-09-10,Full,Affluent
+C0181,40,F,Nairobi,Farmer,18900,2022-07-11,Basic,Mass
+C0182,32,F,Nairobi,Salaried,73200,2024-06-25,Standard,Affluent
+C0183,43,F,Mombasa,Boda rider,32500,2022-07-31,Standard,Mid
+C0184,36,F,Nairobi,Salaried,95900,2022-09-23,Standard,Affluent
+C0185,28,M,Machakos,Salaried,84400,2023-08-25,Standard,Affluent
+C0186,29,M,Nakuru,Trader,53300,2023-01-07,Standard,Mid
+C0187,38,F,Nairobi,Self-employed,34700,2023-04-24,Full,Mid
+C0188,32,M,Kisii,Salaried,55400,2023-06-08,Basic,Mid
+C0189,34,M,Kiambu,Salaried,40600,2022-12-13,Basic,Mid
+C0190,45,F,Nakuru,Salaried,45000,2023-11-03,Basic,Mid
+C0191,24,M,Mombasa,Boda rider,45200,2022-02-26,Basic,Mid
+C0192,36,F,Nairobi,Self-employed,51200,2023-12-20,Basic,Mid
+C0193,37,M,Nairobi,Farmer,16800,2023-09-30,Basic,Mass
+C0194,34,M,Nairobi,Student,10800,2023-02-15,Basic,Mass
+C0195,38,M,Nairobi,Farmer,35800,2023-12-22,Basic,Mid
+C0196,18,F,Kisii,Student,8900,2023-07-06,Full,Mass
+C0197,39,M,Kisii,Self-employed,49100,2023-04-03,Standard,Mid
+C0198,34,M,Nairobi,Student,8800,2023-07-28,Standard,Mass
+C0199,36,F,Machakos,Salaried,46700,2023-08-22,Standard,Mid
+C0200,48,M,Kakamega,Salaried,76400,2023-10-28,Standard,Affluent
+C0201,32,F,Kisii,Trader,63900,2024-04-06,Standard,Mid
+C0202,34,M,Nairobi,Student,9500,2022-02-28,Full,Mass
+C0203,31,M,Kisumu,Trader,71300,2022-03-24,Standard,Affluent
+C0204,19,F,Nakuru,Trader,29700,2023-06-05,Standard,Mid
+C0205,22,M,Mombasa,Boda rider,55200,2022-03-05,Basic,Mid
+C0206,25,M,Mombasa,Salaried,71000,2023-07-26,Full,Affluent
+C0207,33,F,Mombasa,Boda rider,55900,2022-01-03,Basic,Mid
+C0208,33,M,Kisii,Salaried,45300,2023-07-31,Standard,Mid
+C0209,36,M,Kisumu,Salaried,88400,2022-08-16,Standard,Affluent
+C0210,39,F,Kiambu,Farmer,35200,2022-06-30,Standard,Mid
+C0211,41,F,Eldoret,Trader,28700,2022-07-16,Basic,Mid
+C0212,31,M,Nairobi,Boda rider,19100,2022-08-20,Basic,Mass
+C0213,41,M,Nakuru,Self-employed,52100,2023-10-15,Standard,Mid
+C0214,29,M,Kiambu,Salaried,50200,2022-07-17,Basic,Mid
+C0215,32,M,Mombasa,Trader,58300,2023-05-02,Basic,Mid
+C0216,23,F,Nyeri,Trader,33400,2024-02-17,Basic,Mid
+C0217,48,M,Nairobi,Salaried,61300,2024-01-05,Basic,Mid
+C0218,39,F,Nairobi,Trader,41200,2022-10-07,Standard,Mid
+C0219,44,F,Nairobi,Farmer,47400,2024-03-03,Basic,Mid
+C0220,29,M,Kisii,Student,17700,2023-11-02,Standard,Mass
+C0221,38,F,Nakuru,Trader,53300,2022-11-06,Basic,Mid
+C0222,27,F,Kiambu,Trader,41200,2023-03-24,Basic,Mid
+C0223,26,F,Eldoret,Trader,45700,2022-04-22,Basic,Mid
+C0224,36,M,Nakuru,Self-employed,28000,2023-08-14,Basic,Mid
+C0225,29,M,Nairobi,Trader,37500,2024-03-09,Standard,Mid
+C0226,42,F,Nakuru,Self-employed,38200,2022-10-13,Full,Mid
+C0227,27,F,Kisumu,Trader,41000,2023-05-30,Standard,Mid
+C0228,18,M,Kiambu,Trader,39000,2022-11-10,Standard,Mid
+C0229,37,F,Nairobi,Trader,32400,2023-04-19,Basic,Mid
+C0230,38,M,Nakuru,Boda rider,29000,2022-07-24,Standard,Mid
+C0231,26,M,Nairobi,Salaried,69300,2023-04-08,Basic,Mid
+C0232,48,M,Nakuru,Salaried,44100,2023-12-16,Standard,Mid
+C0233,40,F,Kisii,Self-employed,70900,2024-02-15,Standard,Affluent
+C0234,48,F,Mombasa,Student,13700,2023-11-30,Standard,Mass
+C0235,37,M,Mombasa,Trader,38000,2024-02-03,Standard,Mid
+C0236,22,M,Eldoret,Salaried,75000,2022-09-18,Basic,Affluent
+C0237,38,F,Mombasa,Self-employed,86200,2022-04-04,Standard,Affluent
+C0238,33,F,Kakamega,Trader,60100,2022-10-23,Basic,Mid
+C0239,35,M,Kiambu,Salaried,91200,2023-01-24,Full,Affluent
+C0240,38,M,Kakamega,Farmer,27600,2023-02-03,Full,Mid
+C0241,34,M,Nairobi,Student,26700,2024-06-28,Standard,Mid
+C0242,31,M,Eldoret,Student,22300,2023-08-16,Standard,Mass
+C0243,26,F,Mombasa,Self-employed,27800,2023-11-15,Standard,Mid
+C0244,45,F,Eldoret,Self-employed,74400,2022-07-24,Standard,Affluent
+C0245,45,M,Nairobi,Salaried,30300,2022-06-07,Basic,Mid
+C0246,35,F,Mombasa,Salaried,93500,2022-01-26,Standard,Affluent
+C0247,34,M,Kiambu,Salaried,94100,2023-03-19,Full,Affluent
+C0248,33,M,Kisii,Boda rider,29200,2023-10-21,Basic,Mid
+C0249,33,F,Nairobi,Self-employed,55400,2024-04-03,Standard,Mid
+C0250,18,F,Eldoret,Salaried,78000,2023-02-24,Standard,Affluent
+C0251,30,F,Nairobi,Boda rider,36900,2023-08-27,Standard,Mid
+C0252,45,F,Nakuru,Salaried,71200,2022-08-06,Standard,Affluent
+C0253,37,M,Eldoret,Salaried,39600,2023-12-23,Basic,Mid
+C0254,44,F,Nakuru,Salaried,53600,2022-08-14,Standard,Mid
+C0255,30,F,Kakamega,Boda rider,41100,2023-03-18,Basic,Mid
+C0256,18,M,Nairobi,Salaried,69400,2022-06-06,Standard,Mid
+C0257,39,M,Kiambu,Salaried,66600,2022-03-03,Basic,Mid
+C0258,45,F,Nyeri,Student,19300,2022-03-02,Basic,Mass
+C0259,39,M,Eldoret,Boda rider,25800,2023-09-18,Basic,Mid
+C0260,18,M,Nairobi,Trader,29100,2022-04-19,Full,Mid
+C0261,31,M,Nairobi,Salaried,46100,2024-05-11,Standard,Mid
+C0262,40,M,Nairobi,Trader,71600,2023-01-13,Standard,Affluent
+C0263,22,M,Nakuru,Student,9800,2022-11-06,Standard,Mass
+C0264,30,M,Kisumu,Trader,66400,2022-06-02,Full,Mid
+C0265,26,F,Kisumu,Trader,42000,2022-09-30,Standard,Mid
+C0266,47,M,Nairobi,Farmer,23400,2023-08-02,Basic,Mass
+C0267,23,F,Nakuru,Boda rider,33600,2023-06-24,Basic,Mid
+C0268,38,F,Nairobi,Self-employed,49800,2023-08-07,Basic,Mid
+C0269,18,M,Mombasa,Trader,27500,2023-12-14,Standard,Mid
+C0270,31,M,Kisumu,Trader,53300,2022-07-03,Basic,Mid
+C0271,46,F,Kiambu,Trader,52700,2023-09-16,Full,Mid
+C0272,21,F,Nairobi,Self-employed,43900,2022-01-29,Basic,Mid
+C0273,44,M,Kakamega,Self-employed,41700,2024-02-27,Basic,Mid
+C0274,42,M,Kakamega,Salaried,140700,2023-12-15,Standard,Affluent
+C0275,38,M,Nairobi,Farmer,27800,2022-10-21,Basic,Mid
+C0276,45,M,Kisumu,Trader,54600,2023-05-06,Full,Mid
+C0277,35,F,Kakamega,Trader,30300,2022-02-16,Standard,Mid
+C0278,38,F,Nairobi,Salaried,47400,2023-07-02,Standard,Mid
+C0279,24,M,Machakos,Trader,75900,2022-03-11,Standard,Affluent
+C0280,28,M,Nairobi,Salaried,42200,2022-02-01,Standard,Mid
+C0281,38,M,Machakos,Self-employed,32200,2023-10-03,Full,Mid
+C0282,20,F,Nairobi,Trader,50200,2023-08-14,Full,Mid
+C0283,38,M,Kisumu,Salaried,61200,2023-08-27,Standard,Mid
+C0284,46,F,Nairobi,Salaried,46600,2022-02-25,Standard,Mid
+C0285,28,F,Nairobi,Trader,27500,2023-09-15,Full,Mid
+C0286,27,M,Kisumu,Salaried,72500,2022-08-04,Full,Affluent
+C0287,38,M,Kisii,Salaried,69700,2023-05-18,Full,Mid
+C0288,40,F,Nairobi,Salaried,61900,2022-07-23,Basic,Mid
+C0289,22,F,Nairobi,Self-employed,43800,2022-07-14,Standard,Mid
+C0290,31,F,Nairobi,Student,19200,2023-03-11,Basic,Mass
+C0291,38,F,Kisii,Boda rider,15400,2022-12-06,Full,Mass
+C0292,34,F,Kisii,Self-employed,80100,2024-03-13,Basic,Affluent
+C0293,38,M,Mombasa,Trader,104200,2023-11-10,Full,Affluent
+C0294,36,M,Kiambu,Self-employed,48900,2023-05-20,Full,Mid
+C0295,37,F,Nairobi,Farmer,29900,2024-02-28,Basic,Mid
+C0296,32,F,Kiambu,Trader,26700,2022-08-10,Standard,Mid
+C0297,46,M,Mombasa,Salaried,50900,2024-06-12,Standard,Mid
+C0298,32,M,Kisumu,Trader,90000,2022-12-20,Basic,Affluent
+C0299,37,M,Nakuru,Salaried,81100,2022-01-21,Standard,Affluent
+C0300,31,M,Nairobi,Student,18300,2023-05-10,Basic,Mass
+C0301,34,M,Kakamega,Trader,56000,2023-02-24,Basic,Mid
+C0302,25,F,Kisii,Boda rider,14700,2022-10-13,Standard,Mass
+C0303,34,F,Kakamega,Farmer,13800,2024-03-08,Standard,Mass
+C0304,44,M,Kisumu,Self-employed,44300,2024-04-26,Basic,Mid
+C0305,31,M,Nairobi,Boda rider,36200,2024-06-13,Standard,Mid
+C0306,29,F,Mombasa,Student,6600,2022-05-17,Standard,Mass
+C0307,25,F,Nyeri,Salaried,81900,2022-04-12,Basic,Affluent
+C0308,23,M,Mombasa,Self-employed,55200,2022-12-25,Basic,Mid
+C0309,27,M,Nairobi,Salaried,110300,2024-06-03,Full,Affluent
+C0310,28,M,Mombasa,Self-employed,48900,2023-02-01,Standard,Mid
+C0311,36,M,Machakos,Self-employed,43000,2022-09-16,Standard,Mid
+C0312,35,M,Kakamega,Self-employed,45900,2022-02-01,Standard,Mid
+C0313,21,F,Kisumu,Salaried,55200,2022-10-27,Standard,Mid
+C0314,45,M,Nairobi,Self-employed,41900,2022-07-02,Full,Mid
+C0315,27,F,Nairobi,Self-employed,36300,2023-05-08,Full,Mid
+C0316,38,M,Nairobi,Self-employed,60600,2024-01-21,Full,Mid
+C0317,19,F,Nairobi,Farmer,58700,2022-03-09,Standard,Mid
+C0318,21,M,Nairobi,Self-employed,65100,2022-05-21,Full,Mid
+C0319,42,F,Nairobi,Salaried,112800,2023-05-14,Standard,Affluent
+C0320,38,F,Mombasa,Self-employed,37900,2023-08-12,Basic,Mid
+C0321,34,M,Nairobi,Boda rider,39600,2022-12-06,Standard,Mid
+C0322,44,F,Nakuru,Salaried,72200,2023-06-24,Standard,Affluent
+C0323,40,F,Nairobi,Salaried,91300,2024-04-22,Standard,Affluent
+C0324,26,F,Mombasa,Salaried,75300,2022-12-12,Standard,Affluent
+C0325,22,M,Kiambu,Trader,31100,2024-01-07,Basic,Mid
+C0326,40,M,Nakuru,Salaried,48100,2022-11-15,Standard,Mid
+C0327,21,M,Nairobi,Self-employed,63200,2022-06-18,Basic,Mid
+C0328,43,F,Nairobi,Farmer,21000,2023-10-04,Basic,Mass
+C0329,36,M,Nairobi,Boda rider,37200,2022-08-31,Basic,Mid
+C0330,31,F,Kisumu,Salaried,50200,2022-01-23,Basic,Mid
+C0331,37,M,Nairobi,Salaried,63900,2023-10-07,Standard,Mid
+C0332,34,F,Nakuru,Salaried,77100,2023-09-11,Standard,Affluent
+C0333,33,M,Nyeri,Student,13100,2022-09-23,Standard,Mass
+C0334,47,M,Eldoret,Salaried,71900,2022-08-05,Standard,Affluent
+C0335,38,M,Nakuru,Farmer,27200,2023-05-29,Basic,Mid
+C0336,37,M,Nairobi,Student,6300,2024-04-29,Standard,Mass
+C0337,26,M,Nairobi,Self-employed,24000,2024-03-23,Basic,Mass
+C0338,41,M,Kiambu,Salaried,98500,2024-01-27,Standard,Affluent
+C0339,40,F,Kiambu,Boda rider,45800,2024-03-21,Standard,Mid
+C0340,29,M,Mombasa,Salaried,86000,2024-01-28,Standard,Affluent
+C0341,29,M,Kiambu,Farmer,35100,2022-11-08,Basic,Mid
+C0342,43,F,Nairobi,Student,10700,2023-12-17,Standard,Mass
+C0343,33,M,Mombasa,Self-employed,22200,2022-09-01,Standard,Mass
+C0344,18,F,Kisumu,Salaried,57200,2022-06-12,Standard,Mid
+C0345,46,F,Kisii,Trader,63400,2022-06-12,Basic,Mid
+C0346,29,M,Kakamega,Farmer,21900,2024-06-18,Standard,Mass
+C0347,39,M,Nairobi,Self-employed,47600,2023-08-16,Standard,Mid
+C0348,42,F,Nairobi,Self-employed,70200,2022-10-13,Standard,Affluent
+C0349,39,M,Nakuru,Self-employed,46800,2022-12-09,Standard,Mid
+C0350,32,M,Nyeri,Trader,35500,2022-01-14,Full,Mid
+C0351,28,F,Nairobi,Salaried,50300,2022-12-10,Basic,Mid
+C0352,45,F,Kisumu,Self-employed,50700,2024-01-03,Full,Mid
+C0353,21,F,Kiambu,Salaried,75700,2024-05-24,Standard,Affluent
+C0354,40,F,Kisumu,Farmer,43000,2024-01-22,Basic,Mid
+C0355,39,M,Nakuru,Trader,67400,2023-04-28,Basic,Mid
+C0356,35,F,Mombasa,Salaried,55300,2024-06-19,Basic,Mid
+C0357,27,M,Nakuru,Salaried,61000,2024-02-18,Standard,Mid
+C0358,43,F,Nairobi,Self-employed,69100,2024-04-21,Standard,Mid
+C0359,38,F,Kakamega,Self-employed,47300,2023-02-21,Basic,Mid
+C0360,32,F,Eldoret,Self-employed,25300,2024-01-30,Full,Mid
+C0361,37,F,Nyeri,Farmer,47500,2024-05-22,Standard,Mid
+C0362,24,M,Eldoret,Salaried,46100,2022-07-30,Basic,Mid
+C0363,21,F,Nairobi,Salaried,68500,2023-09-30,Full,Mid
+C0364,34,M,Nairobi,Trader,38600,2022-01-17,Standard,Mid
+C0365,33,F,Mombasa,Salaried,68500,2022-05-07,Basic,Mid
+C0366,40,M,Nairobi,Boda rider,24200,2023-03-29,Standard,Mass
+C0367,39,M,Kiambu,Farmer,26500,2022-07-18,Standard,Mid
+C0368,25,M,Mombasa,Farmer,13600,2023-12-27,Basic,Mass
+C0369,38,F,Kisii,Trader,42300,2023-09-29,Standard,Mid
+C0370,34,M,Nakuru,Salaried,51200,2023-03-23,Standard,Mid
+C0371,28,M,Machakos,Student,10900,2023-08-13,Basic,Mass
+C0372,39,M,Nairobi,Salaried,84200,2022-03-06,Basic,Affluent
+C0373,36,F,Machakos,Salaried,64800,2022-04-07,Basic,Mid
+C0374,34,F,Mombasa,Self-employed,75200,2024-05-07,Standard,Affluent
+C0375,26,M,Nakuru,Boda rider,25000,2022-03-27,Full,Mid
+C0376,31,M,Nakuru,Self-employed,116900,2022-10-01,Standard,Affluent
+C0377,49,F,Nairobi,Farmer,20600,2022-05-21,Basic,Mass
+C0378,31,F,Kisumu,Self-employed,44700,2024-02-10,Full,Mid
+C0379,26,F,Nairobi,Salaried,57000,2023-10-18,Standard,Mid
+C0380,31,F,Nairobi,Trader,47100,2023-11-05,Full,Mid
+C0381,33,M,Nairobi,Student,9600,2022-07-08,Basic,Mass
+C0382,48,M,Nakuru,Trader,52700,2022-12-04,Basic,Mid
+C0383,23,M,Nakuru,Trader,36000,2023-06-06,Full,Mid
+C0384,29,M,Nairobi,Trader,43400,2023-06-07,Full,Mid
+C0385,46,M,Machakos,Salaried,53300,2023-10-22,Basic,Mid
+C0386,39,M,Kiambu,Self-employed,92800,2023-09-14,Basic,Affluent
+C0387,29,F,Kiambu,Salaried,43600,2024-02-08,Standard,Mid
+C0388,21,F,Nairobi,Trader,27400,2022-09-16,Basic,Mid
+C0389,27,M,Kakamega,Self-employed,79400,2023-11-04,Full,Affluent
+C0390,46,F,Nakuru,Salaried,64100,2023-02-04,Basic,Mid
+C0391,47,M,Kisii,Self-employed,70000,2023-12-31,Full,Affluent
+C0392,31,F,Mombasa,Farmer,41000,2023-11-04,Basic,Mid
+C0393,41,F,Nakuru,Self-employed,72600,2022-10-14,Basic,Affluent
+C0394,35,M,Nakuru,Trader,30700,2022-10-11,Full,Mid
+C0395,41,F,Kiambu,Self-employed,56300,2022-10-27,Standard,Mid
+C0396,30,F,Nyeri,Salaried,35200,2023-01-17,Basic,Mid
+C0397,39,F,Nairobi,Salaried,54800,2024-03-04,Standard,Mid
+C0398,32,F,Kiambu,Salaried,52200,2022-02-03,Standard,Mid
+C0399,36,M,Nairobi,Salaried,48500,2024-03-31,Full,Mid
+C0400,32,F,Nyeri,Trader,30300,2022-08-26,Standard,Mid
+C0401,43,F,Mombasa,Salaried,62800,2022-02-20,Full,Mid
+C0402,50,M,Kiambu,Boda rider,30800,2023-09-13,Basic,Mid
+C0403,23,F,Nairobi,Farmer,9400,2023-06-25,Standard,Mass
+C0404,39,M,Kiambu,Farmer,38100,2023-08-26,Basic,Mid
+C0405,36,M,Eldoret,Trader,35700,2023-10-01,Full,Mid
+C0406,27,M,Nairobi,Student,11200,2024-03-27,Standard,Mass
+C0407,46,F,Kiambu,Trader,46900,2022-01-27,Basic,Mid
+C0408,22,M,Mombasa,Salaried,148900,2022-07-23,Standard,Affluent
+C0409,21,M,Nairobi,Trader,89600,2022-10-11,Standard,Affluent
+C0410,40,F,Kakamega,Salaried,52600,2022-02-26,Standard,Mid
+C0411,27,M,Nakuru,Salaried,93000,2022-10-20,Basic,Affluent
+C0412,30,M,Machakos,Salaried,72800,2023-06-10,Standard,Affluent
+C0413,41,M,Mombasa,Student,12000,2024-05-25,Standard,Mass
+C0414,32,F,Nairobi,Salaried,48200,2022-08-18,Basic,Mid
+C0415,21,F,Mombasa,Boda rider,24700,2022-04-30,Standard,Mass
+C0416,28,F,Nakuru,Boda rider,33500,2023-12-07,Basic,Mid
+C0417,33,F,Machakos,Self-employed,59700,2023-09-01,Standard,Mid
+C0418,18,M,Eldoret,Farmer,58700,2022-11-17,Standard,Mid
+C0419,24,F,Machakos,Self-employed,41500,2023-10-25,Standard,Mid
+C0420,43,F,Kisumu,Self-employed,55900,2023-06-10,Standard,Mid
+C0421,34,F,Nairobi,Boda rider,28900,2022-08-05,Standard,Mid
+C0422,46,F,Nakuru,Student,18200,2022-10-30,Basic,Mass
+C0423,35,F,Kisumu,Salaried,70700,2023-10-26,Standard,Affluent
+C0424,38,F,Nairobi,Farmer,30700,2022-04-13,Standard,Mid
+C0425,18,F,Nairobi,Farmer,19100,2022-09-24,Standard,Mass
+C0426,38,F,Kiambu,Self-employed,64500,2024-05-27,Basic,Mid
+C0427,27,M,Eldoret,Salaried,58700,2022-06-05,Standard,Mid
+C0428,26,F,Kiambu,Self-employed,66200,2023-01-11,Standard,Mid
+C0429,44,M,Nairobi,Trader,81400,2022-07-04,Basic,Affluent
+C0430,45,F,Nairobi,Salaried,87800,2023-03-25,Basic,Affluent
+C0431,36,F,Mombasa,Trader,32100,2023-08-26,Standard,Mid
+C0432,35,M,Nairobi,Boda rider,23400,2023-02-17,Standard,Mass
+C0433,43,M,Kiambu,Salaried,64000,2022-11-06,Standard,Mid
+C0434,27,F,Nairobi,Trader,47700,2023-01-03,Basic,Mid
+C0435,54,F,Kakamega,Self-employed,69900,2023-01-23,Standard,Mid
+C0436,25,M,Nairobi,Farmer,18100,2022-04-10,Standard,Mass
+C0437,33,F,Nairobi,Trader,63000,2022-02-13,Standard,Mid
+C0438,25,M,Eldoret,Self-employed,56900,2022-11-27,Standard,Mid
+C0439,33,M,Mombasa,Self-employed,41500,2023-02-22,Standard,Mid
+C0440,53,M,Mombasa,Salaried,35300,2023-07-20,Basic,Mid
+C0441,40,M,Mombasa,Farmer,17600,2024-01-09,Standard,Mass
+C0442,39,M,Eldoret,Self-employed,28400,2023-02-27,Standard,Mid
+C0443,49,F,Kiambu,Student,17900,2022-01-31,Standard,Mass
+C0444,23,M,Nakuru,Boda rider,29400,2024-05-31,Standard,Mid
+C0445,35,F,Kiambu,Salaried,74800,2023-12-27,Basic,Affluent
+C0446,27,F,Kiambu,Student,8000,2024-02-11,Basic,Mass
+C0447,18,F,Nakuru,Self-employed,21200,2023-08-03,Standard,Mass
+C0448,43,M,Kisumu,Trader,37600,2023-09-28,Standard,Mid
+C0449,54,F,Nairobi,Boda rider,24900,2024-02-03,Standard,Mass
+C0450,39,F,Mombasa,Salaried,56400,2023-04-25,Full,Mid
+C0451,23,F,Eldoret,Salaried,63500,2023-05-21,Basic,Mid
+C0452,47,F,Mombasa,Boda rider,26100,2023-07-21,Standard,Mid
+C0453,26,F,Nairobi,Trader,17700,2023-07-26,Standard,Mass
+C0454,41,M,Nyeri,Self-employed,57500,2024-03-10,Full,Mid
+C0455,40,M,Mombasa,Self-employed,72300,2022-08-14,Standard,Affluent
+C0456,34,M,Kiambu,Trader,36700,2022-06-30,Standard,Mid
+C0457,44,M,Eldoret,Salaried,29000,2023-09-01,Basic,Mid
+C0458,34,M,Nairobi,Salaried,62000,2024-06-08,Basic,Mid
+C0459,39,M,Nairobi,Salaried,47000,2023-06-26,Standard,Mid
+C0460,54,F,Mombasa,Boda rider,31800,2022-10-25,Basic,Mid
+C0461,25,M,Kiambu,Self-employed,120300,2023-10-20,Standard,Affluent
+C0462,31,M,Nakuru,Salaried,37200,2022-12-16,Standard,Mid
+C0463,28,F,Nairobi,Self-employed,27300,2022-08-26,Full,Mid
+C0464,33,F,Mombasa,Trader,52200,2022-04-12,Full,Mid
+C0465,30,F,Nakuru,Student,6000,2022-11-27,Full,Mass
+C0466,47,F,Nairobi,Trader,54600,2022-02-06,Basic,Mid
+C0467,25,M,Mombasa,Salaried,64300,2024-05-09,Basic,Mid
+C0468,41,F,Nakuru,Boda rider,22000,2023-12-06,Standard,Mass
+C0469,40,F,Eldoret,Trader,21800,2022-08-21,Full,Mass
+C0470,39,M,Machakos,Self-employed,47100,2024-03-19,Standard,Mid
+C0471,26,F,Nakuru,Salaried,56300,2023-01-17,Basic,Mid
+C0472,41,M,Kisumu,Salaried,73100,2024-01-15,Standard,Affluent
+C0473,33,F,Nairobi,Trader,67300,2022-06-01,Basic,Mid
+C0474,45,M,Nairobi,Salaried,47500,2024-03-07,Standard,Mid
+C0475,40,F,Kisumu,Farmer,33200,2024-02-06,Standard,Mid
+C0476,41,F,Nairobi,Salaried,89000,2023-09-15,Basic,Affluent
+C0477,31,F,Nairobi,Farmer,20300,2023-05-25,Basic,Mass
+C0478,36,M,Nairobi,Trader,31700,2023-08-21,Standard,Mid
+C0479,44,F,Nairobi,Self-employed,69200,2024-05-20,Basic,Mid
+C0480,34,F,Eldoret,Trader,18100,2023-03-29,Standard,Mass
+C0481,25,F,Nairobi,Student,13300,2024-03-11,Standard,Mass
+C0482,63,M,Kiambu,Salaried,38800,2023-09-24,Standard,Mid
+C0483,26,F,Kakamega,Farmer,20700,2023-10-27,Standard,Mass
+C0484,34,F,Kisii,Trader,39900,2023-09-07,Basic,Mid
+C0485,24,F,Eldoret,Salaried,51200,2024-03-25,Basic,Mid
+C0486,18,F,Kiambu,Self-employed,45700,2024-06-08,Standard,Mid
+C0487,27,M,Nairobi,Salaried,57900,2023-09-25,Standard,Mid
+C0488,40,F,Eldoret,Trader,62300,2022-09-29,Full,Mid
+C0489,48,M,Machakos,Trader,17900,2024-01-20,Standard,Mass
+C0490,51,M,Nairobi,Farmer,44400,2022-06-10,Standard,Mid
+C0491,39,M,Nairobi,Trader,54000,2022-09-03,Standard,Mid
+C0492,50,M,Mombasa,Salaried,33200,2022-03-16,Full,Mid
+C0493,21,M,Kisumu,Farmer,29900,2023-05-12,Full,Mid
+C0494,27,M,Nairobi,Salaried,54600,2022-03-31,Basic,Mid
+C0495,51,M,Nakuru,Salaried,45300,2023-02-11,Standard,Mid
+C0496,42,F,Machakos,Boda rider,28500,2023-07-06,Basic,Mid
+C0497,31,F,Kiambu,Student,14300,2023-12-12,Full,Mass
+C0498,30,M,Kisii,Self-employed,63100,2022-11-16,Standard,Mid
+C0499,39,M,Kiambu,Salaried,36200,2022-11-17,Standard,Mid
+C0500,41,F,Kisumu,Self-employed,41200,2022-04-21,Standard,Mid
+C0501,48,M,Kisumu,Self-employed,42500,2024-01-30,Basic,Mid
+C0502,34,F,Nakuru,Student,13800,2023-12-23,Full,Mass
+C0503,38,F,Nairobi,Salaried,84800,2023-08-07,Standard,Affluent
+C0504,34,M,Kakamega,Boda rider,25300,2023-11-05,Standard,Mid
+C0505,42,F,Kiambu,Self-employed,74000,2024-03-08,Basic,Affluent
+C0506,42,F,Kiambu,Trader,41600,2024-04-02,Standard,Mid
+C0507,30,M,Nairobi,Student,14000,2023-06-19,Basic,Mass
+C0508,43,F,Nairobi,Self-employed,41500,2024-06-03,Full,Mid
+C0509,18,F,Machakos,Farmer,44400,2022-03-28,Full,Mid
+C0510,36,F,Mombasa,Farmer,35700,2022-07-12,Standard,Mid
+C0511,30,F,Kiambu,Boda rider,33200,2023-08-22,Standard,Mid
+C0512,20,M,Nairobi,Self-employed,31300,2022-07-08,Full,Mid
+C0513,25,M,Nairobi,Farmer,29900,2023-11-19,Basic,Mid
+C0514,25,M,Kisii,Salaried,85200,2023-10-08,Standard,Affluent
+C0515,31,M,Kisumu,Salaried,79700,2023-06-09,Basic,Affluent
+C0516,36,M,Kisumu,Boda rider,19400,2022-12-09,Basic,Mass
+C0517,28,M,Kiambu,Salaried,51200,2022-10-05,Standard,Mid
+C0518,37,F,Mombasa,Salaried,137500,2023-02-26,Standard,Affluent
+C0519,44,F,Nairobi,Farmer,16500,2023-09-09,Standard,Mass
+C0520,27,M,Machakos,Salaried,44800,2023-06-15,Basic,Mid
+C0521,24,F,Nairobi,Salaried,72500,2023-02-11,Standard,Affluent
+C0522,53,F,Mombasa,Self-employed,91600,2023-09-07,Basic,Affluent
+C0523,35,F,Nairobi,Trader,38500,2022-09-07,Standard,Mid
+C0524,30,M,Machakos,Salaried,73100,2023-05-14,Standard,Affluent
+C0525,29,M,Kisii,Boda rider,35200,2022-08-17,Basic,Mid
+C0526,37,M,Kisumu,Student,6000,2023-12-15,Basic,Mass
+C0527,48,M,Mombasa,Trader,30500,2022-06-18,Standard,Mid
+C0528,43,M,Nyeri,Farmer,20300,2023-05-07,Standard,Mass
+C0529,38,M,Nairobi,Salaried,57200,2022-09-14,Full,Mid
+C0530,33,M,Nairobi,Trader,29400,2024-05-12,Basic,Mid
+C0531,27,F,Kiambu,Student,11100,2023-12-08,Standard,Mass
+C0532,25,F,Nairobi,Student,23600,2022-03-06,Basic,Mass
+C0533,39,M,Kiambu,Self-employed,59300,2024-02-08,Standard,Mid
+C0534,32,F,Kiambu,Trader,62900,2023-01-01,Basic,Mid
+C0535,38,M,Kiambu,Salaried,66700,2023-05-04,Full,Mid
+C0536,43,M,Nairobi,Trader,42500,2022-09-20,Basic,Mid
+C0537,46,M,Nairobi,Trader,39700,2022-10-18,Standard,Mid
+C0538,31,M,Nairobi,Salaried,95300,2023-10-06,Basic,Affluent
+C0539,22,F,Nakuru,Self-employed,46700,2022-05-14,Standard,Mid
+C0540,48,M,Nyeri,Boda rider,26500,2022-09-07,Standard,Mid
+C0541,24,F,Nairobi,Salaried,36300,2023-06-28,Basic,Mid
+C0542,34,M,Nairobi,Salaried,82400,2022-09-03,Basic,Affluent
+C0543,33,M,Nairobi,Self-employed,39700,2022-02-05,Standard,Mid
+C0544,43,F,Kisumu,Salaried,81100,2023-07-12,Basic,Affluent
+C0545,42,F,Nakuru,Self-employed,66800,2023-01-19,Basic,Mid
+C0546,42,F,Nairobi,Self-employed,58000,2022-03-16,Basic,Mid
+C0547,32,M,Nairobi,Self-employed,53800,2023-08-26,Basic,Mid
+C0548,34,F,Nairobi,Trader,30800,2023-06-21,Standard,Mid
+C0549,41,F,Mombasa,Boda rider,23300,2022-09-27,Standard,Mass
+C0550,30,M,Kisumu,Self-employed,45600,2022-05-06,Standard,Mid
+C0551,38,M,Nairobi,Self-employed,69500,2023-12-22,Basic,Mid
+C0552,36,M,Machakos,Salaried,74100,2023-10-19,Standard,Affluent
+C0553,40,M,Kisumu,Farmer,23000,2024-02-29,Standard,Mass
+C0554,26,F,Nairobi,Self-employed,74800,2023-09-23,Basic,Affluent
+C0555,27,M,Mombasa,Student,17300,2022-12-16,Basic,Mass
+C0556,38,M,Mombasa,Farmer,8700,2024-05-07,Standard,Mass
+C0557,24,F,Mombasa,Farmer,18400,2023-09-16,Standard,Mass
+C0558,32,M,Kiambu,Trader,64000,2023-06-21,Standard,Mid
+C0559,27,M,Nairobi,Salaried,81100,2022-07-28,Standard,Affluent
+C0560,28,M,Kakamega,Boda rider,24400,2024-03-20,Standard,Mass
+C0561,27,F,Kiambu,Self-employed,70100,2022-05-02,Full,Affluent
+C0562,37,F,Nairobi,Trader,55800,2022-04-19,Standard,Mid
+C0563,34,F,Nairobi,Farmer,34000,2023-10-22,Standard,Mid
+C0564,42,M,Nairobi,Salaried,47400,2024-04-22,Standard,Mid
+C0565,35,M,Nairobi,Student,9900,2023-12-21,Basic,Mass
+C0566,36,M,Nairobi,Salaried,80500,2022-10-27,Standard,Affluent
+C0567,50,M,Kakamega,Boda rider,29900,2023-07-07,Standard,Mid
+C0568,47,M,Mombasa,Trader,45400,2023-11-11,Full,Mid
+C0569,32,M,Nairobi,Self-employed,25900,2023-12-26,Basic,Mid
+C0570,35,F,Kakamega,Farmer,34600,2023-09-27,Basic,Mid
+C0571,44,F,Nakuru,Trader,39500,2024-01-20,Basic,Mid
+C0572,18,M,Kiambu,Farmer,19400,2023-12-23,Full,Mass
+C0573,32,F,Nairobi,Trader,34400,2023-09-06,Basic,Mid
+C0574,31,F,Nairobi,Trader,30700,2024-03-12,Standard,Mid
+C0575,23,M,Nakuru,Self-employed,87600,2022-08-06,Basic,Affluent
+C0576,33,M,Kiambu,Trader,30500,2022-04-08,Standard,Mid
+C0577,19,M,Kisumu,Trader,46500,2022-09-30,Basic,Mid
+C0578,56,F,Nairobi,Self-employed,43800,2022-10-18,Standard,Mid
+C0579,33,F,Nairobi,Farmer,18200,2024-02-01,Standard,Mass
+C0580,34,M,Nairobi,Self-employed,50400,2023-06-02,Full,Mid
+C0581,21,M,Nairobi,Boda rider,37600,2023-07-10,Standard,Mid
+C0582,36,M,Nairobi,Trader,28800,2023-05-07,Full,Mid
+C0583,51,M,Nairobi,Student,6000,2023-02-23,Standard,Mass
+C0584,32,M,Kisumu,Boda rider,31900,2023-09-30,Standard,Mid
+C0585,42,M,Kisii,Student,8000,2023-05-15,Full,Mass
+C0586,43,F,Mombasa,Self-employed,56900,2024-02-29,Full,Mid
+C0587,18,F,Kiambu,Farmer,40200,2023-06-13,Full,Mid
+C0588,30,F,Kisii,Student,14800,2022-01-13,Standard,Mass
+C0589,31,M,Kisii,Boda rider,33600,2023-10-26,Basic,Mid
+C0590,28,M,Nairobi,Salaried,27700,2024-06-06,Basic,Mid
+C0591,21,M,Kisii,Trader,36600,2022-08-05,Standard,Mid
+C0592,27,M,Nyeri,Salaried,78300,2023-06-04,Full,Affluent
+C0593,19,M,Eldoret,Trader,40100,2023-05-23,Standard,Mid
+C0594,37,M,Nairobi,Boda rider,29200,2023-01-30,Standard,Mid
+C0595,39,M,Kisumu,Boda rider,20900,2023-04-20,Full,Mass
+C0596,42,M,Nairobi,Salaried,100300,2022-01-25,Full,Affluent
+C0597,31,M,Nakuru,Trader,28800,2023-11-17,Standard,Mid
+C0598,26,M,Nairobi,Self-employed,48200,2023-09-24,Basic,Mid
+C0599,45,F,Kisumu,Self-employed,36600,2023-01-21,Basic,Mid
+C0600,32,M,Nakuru,Trader,46100,2023-02-28,Standard,Mid
+C0601,37,M,Nakuru,Trader,47900,2022-08-23,Full,Mid
+C0602,43,M,Nairobi,Salaried,58700,2022-04-06,Basic,Mid
+C0603,26,F,Kakamega,Boda rider,23000,2023-06-14,Basic,Mass
+C0604,35,M,Nairobi,Self-employed,51900,2023-09-24,Basic,Mid
+C0605,43,M,Kisumu,Trader,97900,2023-08-01,Basic,Affluent
+C0606,35,M,Nairobi,Salaried,28600,2024-03-12,Standard,Mid
+C0607,32,M,Nairobi,Trader,35600,2022-02-25,Basic,Mid
+C0608,44,F,Nairobi,Salaried,84100,2023-11-06,Standard,Affluent
+C0609,27,F,Nairobi,Boda rider,29900,2023-12-07,Full,Mid
+C0610,26,M,Eldoret,Trader,35300,2022-09-29,Basic,Mid
+C0611,37,F,Nairobi,Boda rider,29200,2024-01-11,Basic,Mid
+C0612,26,F,Eldoret,Salaried,54500,2023-03-28,Standard,Mid
+C0613,33,M,Nairobi,Self-employed,38700,2022-11-05,Full,Mid
+C0614,29,F,Machakos,Farmer,20900,2022-10-15,Standard,Mass
+C0615,31,M,Nairobi,Salaried,102600,2023-01-27,Standard,Affluent
+C0616,40,F,Nakuru,Farmer,33500,2023-12-12,Standard,Mid
+C0617,38,M,Nairobi,Self-employed,46400,2023-07-26,Full,Mid
+C0618,31,M,Nairobi,Self-employed,55200,2024-04-17,Full,Mid
+C0619,32,F,Nyeri,Salaried,67900,2024-02-12,Basic,Mid
+C0620,34,M,Nyeri,Salaried,84800,2024-04-16,Standard,Affluent
+C0621,34,F,Nairobi,Farmer,17600,2023-12-25,Full,Mass
+C0622,32,F,Kiambu,Boda rider,42200,2023-07-27,Full,Mid
+C0623,31,M,Eldoret,Trader,31800,2022-07-03,Full,Mid
+C0624,49,F,Kisii,Trader,49100,2024-04-26,Basic,Mid
+C0625,33,M,Nairobi,Farmer,28600,2023-08-03,Standard,Mid
+C0626,35,M,Nairobi,Salaried,43300,2023-01-22,Basic,Mid
+C0627,21,F,Nairobi,Self-employed,66700,2022-05-24,Standard,Mid
+C0628,28,M,Kiambu,Self-employed,83000,2023-08-21,Basic,Affluent
+C0629,50,F,Kiambu,Salaried,140300,2022-01-18,Standard,Affluent
+C0630,50,F,Kakamega,Salaried,79800,2022-08-18,Basic,Affluent
+C0631,32,M,Nairobi,Trader,35600,2023-12-13,Standard,Mid
+C0632,21,M,Nakuru,Trader,37700,2023-02-26,Standard,Mid
+C0633,42,M,Mombasa,Farmer,39000,2023-12-03,Standard,Mid
+C0634,27,F,Nairobi,Boda rider,54500,2023-05-23,Basic,Mid
+C0635,45,F,Kisii,Salaried,76600,2022-05-31,Standard,Affluent
+C0636,33,F,Mombasa,Student,12500,2022-11-28,Standard,Mass
+C0637,30,F,Machakos,Boda rider,35600,2022-11-28,Standard,Mid
+C0638,32,F,Nairobi,Trader,49200,2024-03-05,Standard,Mid
+C0639,43,M,Nairobi,Salaried,63700,2024-05-30,Full,Mid
+C0640,31,M,Kiambu,Farmer,19700,2023-02-14,Full,Mass
+C0641,25,F,Mombasa,Salaried,51600,2022-06-28,Basic,Mid
+C0642,22,M,Mombasa,Boda rider,19200,2024-02-18,Basic,Mass
+C0643,33,F,Kakamega,Trader,53700,2022-11-03,Full,Mid
+C0644,31,M,Nairobi,Self-employed,59000,2023-12-09,Full,Mid
+C0645,35,M,Mombasa,Salaried,85300,2023-12-10,Standard,Affluent
+C0646,31,M,Kisumu,Trader,22700,2024-02-22,Standard,Mass
+C0647,34,M,Mombasa,Farmer,23400,2022-01-22,Basic,Mass
+C0648,31,M,Machakos,Boda rider,28000,2023-07-17,Basic,Mid
+C0649,44,M,Nakuru,Salaried,72400,2024-01-08,Basic,Affluent
+C0650,31,F,Eldoret,Trader,30900,2022-03-02,Standard,Mid
+C0651,39,F,Nairobi,Salaried,98100,2022-08-25,Full,Affluent
+C0652,36,F,Nairobi,Boda rider,21300,2023-10-08,Standard,Mass
+C0653,27,M,Nairobi,Salaried,32500,2023-08-21,Standard,Mid
+C0654,21,F,Nairobi,Trader,26500,2024-02-04,Standard,Mid
+C0655,39,M,Nairobi,Trader,34700,2022-11-07,Basic,Mid
+C0656,34,M,Kiambu,Salaried,79000,2022-05-21,Standard,Affluent
+C0657,47,F,Mombasa,Boda rider,12700,2023-10-22,Full,Mass
+C0658,30,F,Kakamega,Salaried,62400,2023-06-08,Full,Mid
+C0659,40,M,Nyeri,Self-employed,77900,2023-12-11,Standard,Affluent
+C0660,26,M,Nairobi,Salaried,91600,2024-01-18,Full,Affluent
+C0661,31,M,Nairobi,Salaried,60800,2022-03-31,Full,Mid
+C0662,28,M,Nakuru,Trader,60700,2023-06-19,Standard,Mid
+C0663,32,F,Nairobi,Farmer,24000,2023-12-07,Standard,Mass
+C0664,34,F,Kiambu,Trader,45400,2022-06-06,Standard,Mid
+C0665,29,M,Nairobi,Self-employed,50600,2023-03-26,Standard,Mid
+C0666,34,M,Nakuru,Trader,39700,2022-11-29,Full,Mid
+C0667,40,F,Kiambu,Salaried,135000,2023-02-09,Standard,Affluent
+C0668,23,F,Machakos,Farmer,31400,2023-09-27,Full,Mid
+C0669,34,F,Kisumu,Salaried,88700,2022-12-25,Full,Affluent
+C0670,28,F,Kisumu,Trader,36900,2022-05-24,Standard,Mid
+C0671,28,M,Eldoret,Salaried,46000,2024-02-16,Full,Mid
+C0672,39,M,Nairobi,Trader,35200,2024-04-10,Standard,Mid
+C0673,35,M,Nairobi,Salaried,72200,2023-10-04,Full,Affluent
+C0674,41,F,Nakuru,Self-employed,42900,2024-05-06,Standard,Mid
+C0675,32,M,Nairobi,Salaried,90000,2022-01-28,Full,Affluent
+C0676,34,F,Nairobi,Salaried,32800,2022-02-16,Basic,Mid
+C0677,29,F,Nakuru,Salaried,128700,2022-06-17,Standard,Affluent
+C0678,37,M,Machakos,Trader,38100,2022-12-30,Standard,Mid
+C0679,33,M,Nyeri,Salaried,133400,2022-09-06,Basic,Affluent
+C0680,31,M,Kisumu,Boda rider,55700,2023-02-26,Standard,Mid
+C0681,42,F,Nakuru,Self-employed,103700,2023-05-13,Basic,Affluent
+C0682,21,M,Nairobi,Boda rider,27800,2023-12-18,Standard,Mid
+C0683,25,F,Kisumu,Boda rider,34500,2022-08-04,Full,Mid
+C0684,24,F,Mombasa,Self-employed,37600,2023-03-24,Standard,Mid
+C0685,34,M,Kisii,Salaried,69800,2023-03-09,Basic,Mid
+C0686,33,M,Nairobi,Self-employed,54400,2023-06-26,Full,Mid
+C0687,36,F,Nairobi,Salaried,33100,2022-04-05,Standard,Mid
+C0688,33,M,Kisumu,Student,8900,2022-04-14,Basic,Mass
+C0689,34,F,Kakamega,Farmer,39800,2023-11-13,Basic,Mid
+C0690,46,M,Eldoret,Farmer,16300,2023-11-01,Standard,Mass
+C0691,33,M,Nyeri,Farmer,34900,2024-04-05,Standard,Mid
+C0692,33,M,Nakuru,Salaried,65100,2023-09-05,Standard,Mid
+C0693,28,F,Kiambu,Boda rider,26300,2023-03-21,Standard,Mid
+C0694,51,F,Nairobi,Trader,23800,2024-01-05,Basic,Mass
+C0695,25,M,Nakuru,Trader,46300,2023-11-16,Standard,Mid
+C0696,34,M,Nairobi,Student,15100,2024-06-02,Standard,Mass
+C0697,28,F,Kakamega,Boda rider,68100,2022-07-17,Standard,Mid
+C0698,21,M,Kiambu,Trader,36900,2023-01-05,Full,Mid
+C0699,29,F,Nairobi,Student,9700,2024-06-25,Standard,Mass
+C0700,24,F,Nairobi,Self-employed,68200,2022-01-20,Full,Mid
+C0701,27,F,Nairobi,Salaried,67700,2022-10-09,Basic,Mid
+C0702,35,F,Nakuru,Self-employed,45200,2022-11-24,Full,Mid
+C0703,40,F,Machakos,Self-employed,73900,2022-03-31,Standard,Affluent
+C0704,36,F,Mombasa,Salaried,70000,2022-12-30,Standard,Affluent
+C0705,43,F,Kisumu,Self-employed,60100,2022-05-15,Standard,Mid
+C0706,38,M,Nakuru,Self-employed,84900,2022-07-19,Full,Affluent
+C0707,22,M,Kisumu,Salaried,49100,2022-02-28,Standard,Mid
+C0708,39,F,Nakuru,Student,16800,2023-04-24,Full,Mass
+C0709,34,F,Machakos,Salaried,50900,2022-03-12,Basic,Mid
+C0710,41,F,Kisumu,Boda rider,32600,2024-05-29,Standard,Mid
+C0711,36,F,Nairobi,Salaried,63600,2022-02-14,Standard,Mid
+C0712,30,M,Nyeri,Trader,37900,2024-04-27,Standard,Mid
+C0713,27,F,Mombasa,Trader,10700,2022-02-24,Basic,Mass
+C0714,33,M,Mombasa,Student,11000,2023-01-16,Basic,Mass
+C0715,39,F,Eldoret,Farmer,17100,2023-11-24,Basic,Mass
+C0716,35,M,Kiambu,Student,11400,2022-11-22,Standard,Mass
+C0717,38,F,Nairobi,Salaried,59500,2022-12-02,Basic,Mid
+C0718,37,M,Nairobi,Salaried,77200,2022-11-02,Basic,Affluent
+C0719,24,F,Kisumu,Student,6300,2023-11-11,Full,Mass
+C0720,29,M,Mombasa,Boda rider,25700,2022-04-20,Standard,Mid
+C0721,18,F,Mombasa,Salaried,86300,2022-08-19,Standard,Affluent
+C0722,31,F,Nairobi,Salaried,46200,2024-05-02,Standard,Mid
+C0723,25,M,Kisumu,Salaried,68900,2023-08-01,Standard,Mid
+C0724,37,F,Machakos,Trader,74400,2022-04-16,Basic,Affluent
+C0725,41,M,Nakuru,Self-employed,58200,2022-10-22,Standard,Mid
+C0726,29,M,Kiambu,Self-employed,66400,2024-01-27,Basic,Mid
+C0727,31,M,Eldoret,Boda rider,24400,2022-06-22,Standard,Mass
+C0728,38,F,Kiambu,Salaried,38900,2023-11-01,Full,Mid
+C0729,28,F,Mombasa,Student,9100,2023-04-19,Standard,Mass
+C0730,40,M,Kisumu,Self-employed,66900,2022-04-22,Standard,Mid
+C0731,18,M,Eldoret,Self-employed,115000,2022-12-12,Standard,Affluent
+C0732,29,M,Nakuru,Boda rider,17800,2022-11-23,Basic,Mass
+C0733,35,M,Kisumu,Trader,28600,2023-01-12,Full,Mid
+C0734,18,F,Mombasa,Trader,36400,2023-06-28,Standard,Mid
+C0735,45,M,Nairobi,Boda rider,17400,2022-10-18,Standard,Mass
+C0736,29,M,Kiambu,Trader,38700,2022-10-13,Standard,Mid
+C0737,33,F,Kisumu,Salaried,74200,2023-10-05,Basic,Affluent
+C0738,33,F,Kiambu,Salaried,68000,2022-02-12,Basic,Mid
+C0739,33,F,Mombasa,Trader,34100,2022-06-05,Basic,Mid
+C0740,31,F,Mombasa,Trader,20600,2023-10-05,Basic,Mass
+C0741,23,F,Eldoret,Self-employed,71600,2023-09-16,Standard,Affluent
+C0742,37,M,Kiambu,Salaried,49700,2023-09-29,Standard,Mid
+C0743,36,M,Kiambu,Salaried,65200,2022-07-21,Standard,Mid
+C0744,32,M,Kakamega,Self-employed,45100,2022-07-18,Basic,Mid
+C0745,28,F,Kisumu,Boda rider,19700,2023-12-22,Standard,Mass
+C0746,28,M,Nairobi,Salaried,51400,2023-01-17,Basic,Mid
+C0747,28,F,Nairobi,Salaried,52100,2024-06-20,Standard,Mid
+C0748,33,F,Nairobi,Self-employed,29000,2022-03-26,Basic,Mid
+C0749,34,F,Machakos,Farmer,15000,2022-11-20,Standard,Mass
+C0750,42,M,Nairobi,Self-employed,58700,2023-03-29,Basic,Mid
+C0751,48,M,Nairobi,Farmer,32000,2023-03-01,Basic,Mid
+C0752,57,F,Kisii,Salaried,60700,2023-12-08,Standard,Mid
+C0753,21,M,Eldoret,Salaried,42600,2023-05-17,Full,Mid
+C0754,38,M,Nyeri,Boda rider,25200,2023-07-16,Standard,Mid
+C0755,46,M,Nairobi,Trader,54600,2023-12-10,Standard,Mid
+C0756,32,M,Nyeri,Salaried,50900,2022-12-07,Full,Mid
+C0757,40,M,Mombasa,Trader,57400,2024-06-06,Basic,Mid
+C0758,24,F,Eldoret,Self-employed,47100,2022-05-27,Basic,Mid
+C0759,38,F,Mombasa,Boda rider,27300,2023-10-04,Standard,Mid
+C0760,32,M,Nyeri,Salaried,46000,2022-03-04,Full,Mid
+C0761,49,M,Machakos,Self-employed,61900,2022-05-14,Full,Mid
+C0762,26,F,Nairobi,Student,18700,2023-07-25,Full,Mass
+C0763,48,M,Nakuru,Salaried,53700,2022-06-15,Standard,Mid
+C0764,38,F,Nairobi,Boda rider,30700,2022-10-23,Basic,Mid
+C0765,27,F,Nairobi,Student,8800,2023-07-18,Standard,Mass
+C0766,26,F,Kiambu,Self-employed,60500,2023-10-19,Standard,Mid
+C0767,37,F,Nairobi,Trader,45800,2022-08-17,Basic,Mid
+C0768,51,M,Nairobi,Salaried,86900,2024-05-22,Standard,Affluent
+C0769,50,M,Nairobi,Salaried,56600,2022-06-06,Standard,Mid
+C0770,20,M,Kakamega,Self-employed,28800,2024-01-13,Basic,Mid
+C0771,35,M,Mombasa,Student,12400,2022-01-27,Standard,Mass
+C0772,43,M,Kiambu,Salaried,61600,2023-09-17,Standard,Mid
+C0773,35,M,Mombasa,Salaried,47700,2023-02-05,Basic,Mid
+C0774,32,M,Nairobi,Salaried,85900,2023-08-23,Basic,Affluent
+C0775,29,F,Nairobi,Boda rider,24700,2023-06-03,Standard,Mass
+C0776,47,F,Nairobi,Student,12800,2022-02-23,Standard,Mass
+C0777,34,M,Kiambu,Student,12000,2022-03-14,Standard,Mass
+C0778,46,F,Machakos,Salaried,76800,2023-12-13,Standard,Affluent
+C0779,37,F,Kisumu,Self-employed,69100,2024-03-18,Standard,Mid
+C0780,41,M,Nyeri,Trader,31800,2022-01-30,Full,Mid
+C0781,33,F,Nairobi,Boda rider,31500,2022-01-02,Basic,Mid
+C0782,35,F,Mombasa,Student,16500,2023-08-15,Standard,Mass
+C0783,40,F,Kisii,Farmer,33000,2023-04-13,Basic,Mid
+C0784,48,F,Machakos,Farmer,32600,2024-06-12,Standard,Mid
+C0785,36,M,Kiambu,Self-employed,27300,2022-06-06,Standard,Mid
+C0786,39,M,Nairobi,Trader,31900,2024-03-22,Standard,Mid
+C0787,36,M,Kisumu,Trader,38100,2022-01-28,Basic,Mid
+C0788,37,F,Nairobi,Trader,36500,2023-11-08,Standard,Mid
+C0789,50,F,Nakuru,Trader,31500,2022-04-27,Full,Mid
+C0790,34,F,Kisumu,Salaried,65300,2022-03-14,Standard,Mid
+C0791,32,F,Nairobi,Self-employed,132300,2023-04-15,Basic,Affluent
+C0792,29,M,Nairobi,Salaried,55100,2023-08-13,Basic,Mid
+C0793,27,M,Nairobi,Salaried,58000,2022-12-23,Full,Mid
+C0794,34,F,Nairobi,Self-employed,74000,2023-10-05,Basic,Affluent
+C0795,20,F,Nairobi,Trader,22900,2022-07-30,Full,Mass
+C0796,39,F,Mombasa,Boda rider,20200,2022-08-02,Standard,Mass
+C0797,51,F,Nakuru,Boda rider,18600,2023-09-25,Basic,Mass
+C0798,37,M,Nairobi,Salaried,65600,2023-11-13,Basic,Mid
+C0799,40,M,Nakuru,Farmer,17800,2023-06-10,Standard,Mass
+C0800,33,F,Nairobi,Student,10500,2023-09-19,Standard,Mass
+C0801,47,F,Kakamega,Boda rider,17600,2022-07-07,Standard,Mass
+C0802,42,M,Kiambu,Self-employed,57900,2024-02-07,Basic,Mid
+C0803,30,F,Mombasa,Salaried,108200,2024-05-18,Basic,Affluent
+C0804,52,F,Nairobi,Farmer,23400,2023-02-14,Full,Mass
+C0805,31,M,Mombasa,Salaried,53900,2023-11-30,Standard,Mid
+C0806,36,F,Kisumu,Trader,38800,2023-09-27,Basic,Mid
+C0807,37,F,Nakuru,Farmer,23100,2023-04-01,Full,Mass
+C0808,47,M,Nairobi,Trader,54200,2022-12-08,Standard,Mid
+C0809,28,F,Nakuru,Salaried,111600,2023-07-27,Full,Affluent
+C0810,39,F,Nairobi,Student,8200,2024-03-15,Standard,Mass
+C0811,24,F,Nairobi,Farmer,27500,2022-08-14,Standard,Mid
+C0812,25,M,Kakamega,Self-employed,114000,2022-09-27,Basic,Affluent
+C0813,22,M,Nairobi,Salaried,81100,2024-05-17,Full,Affluent
+C0814,47,M,Kiambu,Salaried,41600,2022-11-02,Full,Mid
+C0815,33,M,Nairobi,Salaried,101600,2022-06-20,Standard,Affluent
+C0816,28,M,Mombasa,Boda rider,21700,2022-10-01,Basic,Mass
+C0817,23,F,Nakuru,Student,9300,2023-03-13,Basic,Mass
+C0818,49,F,Nairobi,Salaried,57100,2022-12-08,Standard,Mid
+C0819,23,F,Mombasa,Salaried,47000,2022-12-13,Standard,Mid
+C0820,34,F,Nairobi,Self-employed,56500,2024-05-11,Basic,Mid
+C0821,36,F,Nairobi,Student,13000,2022-09-01,Standard,Mass
+C0822,40,M,Kisii,Salaried,79300,2024-03-05,Basic,Affluent
+C0823,36,F,Kiambu,Self-employed,61100,2023-05-09,Standard,Mid
+C0824,49,M,Nairobi,Salaried,70200,2022-10-25,Standard,Affluent
+C0825,41,F,Nairobi,Farmer,27300,2023-09-07,Basic,Mid
+C0826,49,M,Kakamega,Self-employed,73100,2023-07-25,Standard,Affluent
+C0827,36,F,Nairobi,Salaried,72400,2022-06-14,Full,Affluent
+C0828,45,F,Kiambu,Salaried,41100,2022-01-09,Basic,Mid
+C0829,28,M,Eldoret,Boda rider,17800,2022-11-27,Standard,Mass
+C0830,23,M,Nairobi,Self-employed,42200,2022-07-18,Basic,Mid
+C0831,33,M,Nakuru,Farmer,23000,2022-05-21,Standard,Mass
+C0832,34,F,Nairobi,Self-employed,57900,2023-09-25,Basic,Mid
+C0833,31,M,Mombasa,Self-employed,23600,2023-06-27,Standard,Mass
+C0834,25,F,Kisumu,Boda rider,26700,2022-11-07,Full,Mid
+C0835,46,F,Kisumu,Trader,46400,2022-05-24,Basic,Mid
+C0836,45,F,Kiambu,Salaried,85000,2022-11-19,Standard,Affluent
+C0837,29,F,Nairobi,Self-employed,48600,2022-11-12,Standard,Mid
+C0838,28,M,Nakuru,Salaried,55700,2024-01-28,Full,Mid
+C0839,43,F,Nairobi,Boda rider,32200,2022-04-06,Basic,Mid
+C0840,33,M,Nairobi,Salaried,92900,2023-08-10,Full,Affluent
+C0841,27,M,Nyeri,Salaried,85500,2024-01-31,Basic,Affluent
+C0842,29,F,Kisumu,Trader,39300,2023-09-24,Standard,Mid
+C0843,36,F,Nairobi,Trader,44400,2023-02-27,Full,Mid
+C0844,39,M,Eldoret,Salaried,74700,2022-10-07,Standard,Affluent
+C0845,50,F,Nairobi,Student,9600,2023-04-27,Standard,Mass
+C0846,25,F,Nairobi,Student,7600,2022-04-08,Standard,Mass
+C0847,42,M,Nakuru,Self-employed,37100,2023-08-10,Standard,Mid
+C0848,42,F,Mombasa,Self-employed,62000,2022-07-12,Standard,Mid
+C0849,36,F,Nairobi,Salaried,81600,2023-03-16,Standard,Affluent
+C0850,33,F,Mombasa,Trader,24600,2022-01-01,Full,Mass
+C0851,38,M,Nairobi,Self-employed,78500,2023-09-01,Standard,Affluent
+C0852,31,F,Kakamega,Farmer,27600,2024-02-16,Standard,Mid
+C0853,34,M,Nakuru,Salaried,61200,2023-03-17,Basic,Mid
+C0854,31,M,Mombasa,Trader,33000,2024-02-01,Standard,Mid
+C0855,36,F,Nairobi,Student,11600,2022-12-30,Standard,Mass
+C0856,18,M,Nairobi,Student,8600,2023-02-11,Standard,Mass
+C0857,36,M,Nakuru,Boda rider,45900,2022-12-20,Standard,Mid
+C0858,26,M,Nairobi,Salaried,37700,2022-09-25,Basic,Mid
+C0859,31,F,Nairobi,Salaried,63300,2023-09-22,Standard,Mid
+C0860,23,M,Nairobi,Boda rider,20400,2023-11-02,Standard,Mass
+C0861,27,M,Nairobi,Salaried,82100,2023-02-01,Basic,Affluent
+C0862,50,M,Kakamega,Student,6000,2024-04-20,Basic,Mass
+C0863,42,M,Kisumu,Self-employed,40500,2024-01-27,Basic,Mid
+C0864,20,M,Nairobi,Salaried,51500,2022-11-27,Basic,Mid
+C0865,33,M,Nairobi,Salaried,102000,2024-04-26,Basic,Affluent
+C0866,50,M,Nairobi,Self-employed,70400,2022-09-20,Standard,Affluent
+C0867,39,M,Nairobi,Boda rider,34100,2023-05-05,Standard,Mid
+C0868,32,M,Mombasa,Salaried,47000,2024-03-29,Standard,Mid
+C0869,42,M,Mombasa,Trader,64400,2023-02-25,Standard,Mid
+C0870,33,M,Mombasa,Self-employed,43400,2022-05-23,Standard,Mid
+C0871,41,M,Mombasa,Student,12900,2024-02-04,Basic,Mass
+C0872,28,M,Nairobi,Boda rider,33400,2022-10-29,Standard,Mid
+C0873,33,F,Kisumu,Trader,36800,2022-09-29,Basic,Mid
+C0874,22,M,Eldoret,Salaried,55900,2023-05-18,Standard,Mid
+C0875,31,F,Kisumu,Trader,40100,2022-03-24,Basic,Mid
+C0876,41,F,Kiambu,Trader,17000,2022-03-09,Basic,Mass
+C0877,36,F,Mombasa,Salaried,93800,2023-07-02,Basic,Affluent
+C0878,34,M,Nairobi,Student,10200,2023-08-19,Full,Mass
+C0879,25,F,Kiambu,Salaried,52100,2024-01-07,Full,Mid
+C0880,29,M,Nairobi,Salaried,123800,2023-08-21,Full,Affluent
+C0881,28,F,Nairobi,Boda rider,32500,2023-07-14,Standard,Mid
+C0882,29,M,Nairobi,Salaried,80700,2023-06-29,Full,Affluent
+C0883,19,M,Mombasa,Trader,54000,2023-11-29,Standard,Mid
+C0884,46,M,Nairobi,Farmer,40800,2023-01-03,Standard,Mid
+C0885,42,F,Kisii,Trader,26100,2022-02-13,Standard,Mid
+C0886,34,M,Nairobi,Trader,92600,2022-04-08,Full,Affluent
+C0887,37,F,Nairobi,Trader,47100,2023-04-27,Standard,Mid
+C0888,35,F,Nyeri,Self-employed,35500,2023-07-11,Standard,Mid
+C0889,27,M,Kisumu,Self-employed,58000,2022-02-08,Full,Mid
+C0890,19,M,Mombasa,Farmer,42200,2024-03-11,Standard,Mid
+C0891,31,F,Nairobi,Self-employed,42000,2024-04-01,Standard,Mid
+C0892,29,F,Kiambu,Salaried,66900,2022-09-20,Standard,Mid
+C0893,26,M,Nyeri,Boda rider,22300,2024-06-29,Standard,Mass
+C0894,52,M,Nairobi,Student,5000,2023-06-23,Basic,Mass
+C0895,28,M,Nairobi,Self-employed,42700,2022-01-31,Basic,Mid
+C0896,31,F,Kisumu,Self-employed,39700,2022-04-23,Full,Mid
+C0897,39,M,Kisumu,Boda rider,20900,2023-06-30,Standard,Mass
+C0898,28,M,Nakuru,Salaried,96400,2022-08-07,Standard,Affluent
+C0899,27,F,Eldoret,Trader,37200,2023-11-02,Basic,Mid
+C0900,24,M,Nairobi,Trader,54800,2022-05-02,Basic,Mid
+C0901,42,M,Nakuru,Self-employed,70000,2022-01-23,Standard,Affluent
+C0902,27,F,Nairobi,Farmer,19700,2024-06-02,Standard,Mass
+C0903,30,M,Eldoret,Salaried,52800,2023-12-30,Standard,Mid
+C0904,29,M,Nairobi,Student,8800,2024-04-04,Standard,Mass
+C0905,23,F,Kisumu,Salaried,97000,2024-03-23,Full,Affluent
+C0906,28,F,Mombasa,Salaried,37100,2022-07-18,Basic,Mid
+C0907,30,M,Machakos,Trader,24700,2022-07-27,Full,Mass
+C0908,36,F,Machakos,Trader,44600,2023-02-12,Standard,Mid
+C0909,35,M,Nyeri,Trader,34100,2022-01-19,Standard,Mid
+C0910,50,F,Mombasa,Boda rider,49000,2023-02-23,Basic,Mid
+C0911,40,F,Eldoret,Salaried,45700,2023-06-20,Standard,Mid
+C0912,42,F,Nairobi,Trader,38700,2024-06-17,Standard,Mid
+C0913,32,F,Nairobi,Farmer,25200,2023-09-19,Full,Mid
+C0914,30,F,Eldoret,Self-employed,35900,2022-10-05,Basic,Mid
+C0915,48,F,Nairobi,Student,11400,2023-02-07,Standard,Mass
+C0916,33,F,Nairobi,Student,12600,2022-06-21,Basic,Mass
+C0917,22,F,Nairobi,Salaried,60100,2024-03-14,Basic,Mid
+C0918,24,M,Kakamega,Student,9900,2024-01-03,Full,Mass
+C0919,35,F,Eldoret,Trader,76000,2022-06-04,Standard,Affluent
+C0920,28,M,Kisumu,Salaried,60500,2023-12-09,Standard,Mid
+C0921,31,M,Machakos,Student,9200,2024-02-18,Basic,Mass
+C0922,33,M,Kiambu,Self-employed,58700,2023-07-03,Basic,Mid
+C0923,31,F,Nakuru,Trader,53000,2022-07-24,Standard,Mid
+C0924,30,M,Kisumu,Salaried,45700,2023-09-12,Standard,Mid
+C0925,58,M,Kisii,Student,8000,2022-06-25,Standard,Mass
+C0926,25,M,Nairobi,Trader,51700,2023-06-23,Full,Mid
+C0927,41,M,Nairobi,Boda rider,26500,2023-04-10,Full,Mid
+C0928,35,F,Kisii,Salaried,109400,2022-10-25,Full,Affluent
+C0929,35,F,Nairobi,Boda rider,49900,2023-04-06,Standard,Mid
+C0930,29,F,Nairobi,Trader,34300,2022-05-22,Standard,Mid
+C0931,33,F,Mombasa,Self-employed,46400,2024-03-13,Basic,Mid
+C0932,36,M,Kiambu,Self-employed,53300,2023-10-13,Basic,Mid
+C0933,25,F,Eldoret,Student,12500,2023-12-30,Basic,Mass
+C0934,30,M,Nairobi,Self-employed,70600,2023-09-03,Full,Affluent
+C0935,37,M,Kiambu,Student,11900,2023-02-04,Standard,Mass
+C0936,44,F,Machakos,Self-employed,69400,2023-08-27,Standard,Mid
+C0937,43,M,Eldoret,Trader,44400,2022-10-16,Basic,Mid
+C0938,28,M,Kakamega,Farmer,13000,2023-09-12,Standard,Mass
+C0939,40,F,Nairobi,Farmer,16400,2023-08-20,Basic,Mass
+C0940,43,F,Nairobi,Trader,68100,2022-09-18,Standard,Mid
+C0941,36,F,Nairobi,Self-employed,62400,2023-05-31,Basic,Mid
+C0942,31,M,Kiambu,Farmer,17800,2022-12-14,Basic,Mass
+C0943,51,F,Nyeri,Salaried,139200,2024-01-16,Standard,Affluent
+C0944,22,F,Mombasa,Self-employed,88000,2023-04-04,Full,Affluent
+C0945,32,F,Kisii,Salaried,39500,2023-10-04,Standard,Mid
+C0946,39,F,Nairobi,Boda rider,26800,2022-11-06,Basic,Mid
+C0947,40,F,Nairobi,Boda rider,31200,2023-12-07,Standard,Mid
+C0948,30,F,Nairobi,Self-employed,49000,2022-03-23,Standard,Mid
+C0949,38,F,Eldoret,Boda rider,20300,2024-06-08,Standard,Mass
+C0950,28,F,Kisii,Trader,51400,2023-10-26,Basic,Mid
+C0951,30,F,Mombasa,Trader,36900,2023-07-10,Basic,Mid
+C0952,36,F,Nakuru,Salaried,60000,2024-02-23,Standard,Mid
+C0953,26,M,Mombasa,Self-employed,100800,2023-07-11,Standard,Affluent
+C0954,34,M,Nakuru,Farmer,24700,2023-01-12,Basic,Mass
+C0955,27,F,Eldoret,Boda rider,19300,2022-01-05,Standard,Mass
+C0956,44,M,Nairobi,Salaried,63000,2024-03-10,Basic,Mid
+C0957,30,F,Eldoret,Farmer,31200,2023-11-17,Standard,Mid
+C0958,28,M,Nakuru,Boda rider,44300,2024-05-31,Basic,Mid
+C0959,35,F,Eldoret,Boda rider,32400,2023-05-03,Standard,Mid
+C0960,30,F,Kisumu,Salaried,37300,2022-02-22,Basic,Mid
+C0961,20,M,Kiambu,Trader,27600,2022-05-21,Standard,Mid
+C0962,35,F,Nairobi,Salaried,53600,2024-05-29,Full,Mid
+C0963,26,M,Kisumu,Trader,30700,2022-05-11,Basic,Mid
+C0964,32,F,Nairobi,Trader,48700,2022-04-19,Standard,Mid
+C0965,50,M,Nairobi,Salaried,47900,2022-05-18,Standard,Mid
+C0966,35,F,Nyeri,Salaried,92800,2023-07-12,Basic,Affluent
+C0967,18,M,Nairobi,Trader,61500,2023-08-30,Standard,Mid
+C0968,33,M,Nakuru,Farmer,24800,2022-12-08,Standard,Mass
+C0969,24,M,Nairobi,Salaried,38600,2022-12-22,Standard,Mid
+C0970,18,M,Mombasa,Self-employed,71300,2022-03-05,Basic,Affluent
+C0971,37,F,Nairobi,Salaried,75400,2023-07-02,Standard,Affluent
+C0972,32,F,Mombasa,Self-employed,49500,2022-11-10,Standard,Mid
+C0973,38,F,Nakuru,Self-employed,47500,2023-07-15,Standard,Mid
+C0974,37,M,Kiambu,Trader,36000,2022-07-27,Standard,Mid
+C0975,33,F,Kisumu,Boda rider,21800,2024-03-23,Basic,Mass
+C0976,48,M,Nairobi,Trader,34300,2024-05-17,Full,Mid
+C0977,36,F,Mombasa,Trader,51800,2024-04-16,Full,Mid
+C0978,18,F,Nairobi,Self-employed,45600,2024-05-29,Basic,Mid
+C0979,18,M,Nairobi,Farmer,39500,2023-09-21,Full,Mid
+C0980,34,F,Nairobi,Student,7800,2022-10-20,Standard,Mass
+C0981,26,F,Machakos,Student,19500,2023-04-01,Basic,Mass
+C0982,34,F,Kakamega,Trader,51100,2023-07-10,Standard,Mid
+C0983,26,F,Mombasa,Salaried,70100,2024-03-24,Basic,Affluent
+C0984,24,M,Nairobi,Salaried,53900,2023-12-26,Standard,Mid
+C0985,26,M,Kisii,Student,8000,2023-12-23,Standard,Mass
+C0986,43,F,Nairobi,Salaried,97400,2023-01-19,Standard,Affluent
+C0987,36,F,Nakuru,Salaried,59400,2023-09-19,Basic,Mid
+C0988,28,M,Nairobi,Trader,27300,2022-01-07,Basic,Mid
+C0989,37,F,Mombasa,Trader,45500,2022-04-10,Basic,Mid
+C0990,35,M,Kakamega,Self-employed,36000,2024-03-11,Standard,Mid
+C0991,19,M,Kakamega,Self-employed,61800,2022-05-18,Basic,Mid
+C0992,32,F,Nairobi,Trader,43000,2023-10-07,Standard,Mid
+C0993,39,F,Nakuru,Student,23400,2022-04-27,Standard,Mass
+C0994,36,F,Kisii,Self-employed,21500,2022-04-25,Standard,Mass
+C0995,37,F,Kiambu,Salaried,80000,2023-12-14,Basic,Affluent
+C0996,37,F,Nairobi,Salaried,57200,2022-09-15,Standard,Mid
+C0997,37,M,Kisumu,Boda rider,29100,2022-06-28,Basic,Mid
+C0998,22,F,Kiambu,Student,12700,2024-04-09,Standard,Mass
+C0999,32,M,Mombasa,Salaried,67700,2022-08-03,Standard,Mid
+C1000,28,F,Kiambu,Salaried,62700,2022-03-15,Full,Mid

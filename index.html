@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Benson Merita Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Benson M. Merita, data analyst in Nairobi: three end-to-end data projects in Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a single ledger-like column; each case study is a numbered file with a margin rail of facts. */
+:root{
+  --paper:#F3F6F5; --surface:#FFFFFF; --ink:#0D2238; --muted:#4E6272; --rule:#D3DDDB;
+  --blue:#1B4F8A; --green:#0B8467; --greenwash:#E1F1EB; --bluewash:#E4ECF6;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0B1621; --surface:#11202E; --ink:#E6EEF2; --muted:#9AB0BD; --rule:#22384A;
+  --blue:#7FB0E8; --green:#4CC9A4; --greenwash:#133229; --bluewash:#152A40; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0B1621; --surface:#11202E; --ink:#E6EEF2; --muted:#9AB0BD; --rule:#22384A;
+  --blue:#7FB0E8; --green:#4CC9A4; --greenwash:#133229; --bluewash:#152A40; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--blue);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.num{font-variant-numeric:tabular-nums}
+
+/* top bar */
+.top{border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{font:600 15px var(--mono);color:var(--ink);text-decoration:none}
+.brand b{color:var(--green)}
+.top nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero .wrap{padding-block:64px 40px;display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:end}
+.hero h1{font-size:clamp(38px,6vw,64px);font-weight:700;letter-spacing:-.02em;margin-top:14px}
+.hero h1 span{color:var(--green)}
+.lede{font-size:19px;color:var(--muted);max-width:56ch;margin:20px 0 0}
+.facts{border-left:2px solid var(--green);padding-left:18px;display:grid;gap:12px;font-size:14px}
+.facts dt{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:2px 0 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--body);padding:10px 16px;border-radius:999px;border:1px solid var(--ink);color:var(--ink);background:transparent;text-decoration:none;cursor:pointer}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn:hover{border-color:var(--green)}
+
+/* project index */
+.index{border-top:1px solid var(--rule)}
+.index .wrap{padding-block:40px 56px}
+.index h2{font-size:15px;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:var(--ink);min-width:0}
+.card:hover{border-color:var(--green)}
+.card .no{font:500 12px var(--mono);color:var(--muted)}
+.card h3{font-size:22px}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.card .big{font:700 30px/1 var(--display);color:var(--green);margin-top:auto}
+.card .big small{display:block;font:400 13px/1.4 var(--body);color:var(--muted);margin-top:6px}
+.tag{display:inline-block;font:500 11px var(--mono);letter-spacing:.06em;padding:3px 8px;border-radius:4px;background:var(--bluewash);color:var(--blue)}
+.tag.syn{background:var(--greenwash);color:var(--green)}
+
+/* case studies */
+.case{border-top:1px solid var(--rule)}
+.case .wrap{padding-block:64px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:48px}
+.rail{position:sticky;top:20px;align-self:start;display:grid;gap:18px;font-size:14px}
+.rail .no{font:700 56px/1 var(--display);color:var(--rule)}
+.rail dt{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.rail dd{margin:3px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:12px var(--mono);border:1px solid var(--rule);border-radius:4px;padding:2px 7px;color:var(--muted)}
+.main{min-width:0;display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+.main h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.015em}
+.q{font-size:19px;color:var(--muted);max-width:60ch;margin:12px 0 0}
+.main h3{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.main p,.main li{max-width:66ch}
+ol.steps{margin:0;padding-left:20px;display:grid;gap:6px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.kpi{background:var(--surface);padding:16px}
+.kpi b{display:block;font:700 24px/1.1 var(--display);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.kpi{min-width:0}
+.kpi span{font-size:13px;color:var(--muted)}
+figure{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:20px}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:13px;color:var(--muted);margin-top:10px}
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+tr.total td{font-weight:600;background:var(--greenwash)}
+tr.flag td{color:var(--blue)}
+.recs{margin:0;padding-left:20px;display:grid;gap:6px}
+.note{font-size:13.5px;color:var(--muted);border-left:2px solid var(--rule);padding-left:12px}
+.more{font-size:14.5px}
+
+/* svg marks */
+.m-hot{fill:var(--green)} .m-cool{fill:var(--rule)}
+.m-axis{stroke:var(--green);stroke-width:2}
+.m-grid{stroke:var(--rule);stroke-width:1}
+.m-tick{fill:var(--muted);font:12px var(--mono)}
+.m-lab{fill:var(--ink);font:13px var(--body)} .m-dim{fill:var(--muted)} .m-strong{font-weight:700;fill:var(--green)}
+.m-val{fill:var(--ink);font:600 13px var(--mono)}
+.m-dot{fill:var(--blue)} .m-hotdot{fill:var(--green)}
+.m-ci{stroke:var(--blue);stroke-width:2}
+
+/* skills + contact */
+.skills .wrap,.contact .wrap{padding-block:56px}
+.skills{border-top:1px solid var(--rule)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:22px}
+.grid4 h3{font-size:18px;margin-bottom:8px}
+.grid4 p{margin:0;color:var(--muted);font-size:14.5px}
+.contact{background:var(--ink);color:var(--paper)}
+.contact h2{font-size:clamp(28px,4vw,40px);color:var(--paper)}
+.contact p{color:var(--paper);opacity:.8;max-width:56ch}
+.contact .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:22px}
+.contact .mail{font:500 16px var(--mono);user-select:all;color:var(--paper)}
+.contact .btn{border-color:var(--paper);color:var(--paper)}
+.contact a.btn:hover,.contact button.btn:hover{border-color:var(--green)}
+footer{font-size:13px;color:var(--muted)}
+footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-block:40px 28px}
+  .cards{grid-template-columns:1fr}
+  .case .wrap{grid-template-columns:minmax(0,1fr);gap:24px;padding-block:44px}
+  .rail{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rail .no{grid-column:1/-1;font-size:40px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:480px){.grid4{grid-template-columns:1fr}.rail{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}}
+
+.tbl.wraptext th,.tbl.wraptext td{white-space:normal;vertical-align:top;text-align:left}
+.tbl.wraptext td:nth-child(2),.tbl.wraptext th:nth-child(2){text-align:right}
+.tbl.wraptext td:first-child{white-space:nowrap;font-weight:600}
+.morehead .wrap{padding-block:48px 8px}
+.morehead h2{font-size:clamp(24px,3.4vw,32px)}
+.morehead p{color:var(--muted);max-width:60ch;margin:10px 0 0}
+.index h2.sub{margin-top:36px}
+
+.rail .code dd{display:grid;gap:4px}
+.rail .code a{color:var(--blue);text-decoration:none;font-weight:600}
+.rail .code a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top">benson<b>.</b>merita</a>
+  <nav aria-label="Sections"><a href="#lending">Credit risk</a><a href="#model">Default model</a><a href="#mpesa">M-Pesa</a><a href="#segments">Segments</a><a href="#insurance">Insurance</a><a href="#retail">Retail</a><a href="#kenya">More</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">Data analyst · Nairobi, Kenya</div>
+    <h1>Benson M. Merita<br><span>Numbers you can sign off on.</span></h1>
+    <p class="lede">I clean messy records, reconcile them to the books and explain what they mean for the business. Eight end-to-end projects below, from SQL and data cleaning to credit risk and machine learning, each with every step checked.</p>
+    <div class="cta">
+      <a class="btn solid" href="#lending">See the projects</a>
+      <a class="btn" href="https://www.linkedin.com/in/benson-merita/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/meritaanalytics" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <dl class="facts">
+    <div><dt>Looking for</dt><dd>Data analyst and credit risk analyst roles in fintech and financial services</dd></div>
+    <div><dt>Education</dt><dd>BSc Mathematics, Second Class Honours (Upper Division), Kibabii University</dd></div>
+    <div><dt>Stack</dt><dd>Python, SQL / MySQL, Power BI, Advanced Excel</dd></div>
+  </dl>
+</div></section>
+
+<section class="index"><div class="wrap">
+  <h2>Featured projects</h2>
+  <div class="cards">
+    <a class="card" href="#lending">
+      <span class="no">01 · <span class="tag syn">Synthetic data</span></span>
+      <h3>Digital lending credit risk in SQL</h3>
+      <p>Measured default rates, vintages, PAR and expected loss on a 560-loan book in SQL, then priced three approval rules in shillings.</p>
+      <div class="big num">Ksh 9.58M<small>net value of the best rule, vs Ksh 4.06M approving everyone</small></div>
+    </a>
+    <a class="card" href="#model">
+      <span class="no">02 · <span class="tag syn">Synthetic data</span></span>
+      <h3>Predicting loan default</h3>
+      <p>Built and compared default models after removing leakage, then set the approval cut-off by expected profit and checked fairness.</p>
+      <div class="big num">AUC 0.84<small>logistic regression on held-out loans, KS 0.56</small></div>
+    </a>
+    <a class="card" href="#mpesa">
+      <span class="no">03 · <span class="tag syn">Synthetic data</span></span>
+      <h3>M-Pesa personal finance analytics</h3>
+      <p>Turned a raw mobile-money statement into categories, a savings rate, payee segments, fraud-style alerts and a tested forecast.</p>
+      <div class="big num">12 of 12<small>planted anomalies caught, with zero false alarms</small></div>
+    </a>
+    <a class="card" href="#segments">
+      <span class="no">04 · <span class="tag syn">Synthetic data</span></span>
+      <h3>Customer segmentation for a SACCO</h3>
+      <p>Grouped 650 members by how they use the service, proved the groups are real and stable, and turned each into an action.</p>
+      <div class="big num">4 segments<small>each with one action and one metric to track</small></div>
+    </a>
+    <a class="card" href="#insurance">
+      <span class="no">05 · <span class="tag syn">Synthetic data</span></span>
+      <h3>Insurance data quality and claim frequency</h3>
+      <p>Built a rules engine that quarantines bad policies and claims, then measured claim frequency with honest uncertainty.</p>
+      <div class="big num">3.15%<small>premium overstatement caught by a merge check</small></div>
+    </a>
+    <a class="card" href="#retail">
+      <span class="no">06 · <span class="tag syn">Synthetic data</span></span>
+      <h3>Shop sales and ledger reconciliation</h3>
+      <p>Cleaned 8,035 sales lines across 12 stores, found where revenue and margin really sit, and traced the books to a single unexplained posting.</p>
+      <div class="big num">Ksh 85,000<small>unexplained posting isolated to one store-month</small></div>
+    </a>
+  </div>
+  <h2 class="sub">More projects</h2>
+  <div class="cards">
+    <a class="card" href="#kenya">
+      <span class="no">07 · <span class="tag">Public data</span></span>
+      <h3>Kenya against six regional peers</h3>
+      <p>Merged World Bank and Our World in Data files to compare growth and price stability, then priced a loan against inflation risk.</p>
+      <div class="big num">4.6% a year<small>Kenya's real growth per person, 2nd of 7</small></div>
+    </a>
+    <a class="card" href="#workshop">
+      <span class="no">08 · <span class="tag syn">Synthetic data</span></span>
+      <h3>Workshop production and OEE</h3>
+      <p>Cleaned six months of hand-typed shift logs, measured machine effectiveness, found the bottleneck and costed scrap in shillings.</p>
+      <div class="big num">Ksh 0.9M<small>night-shift Grinder scrap found: 26% of all scrap losses</small></div>
+    </a>
+  </div>
+</div></section>
+<section class="case" id="lending"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">01</div>
+  <dl><dt>Data</dt><dd>A lender database: 1,000 customers, 560 loans across four products, 2,867 scheduled repayments. Synthetic, generated with a fixed seed.</dd></dl>
+  <dl><dt>Method</dt><dd>SQL data checks, CTEs, window functions, vintages, PAR30/90, PD × LGD × EAD, rule pricing</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">pandas</span><span class="chip">Matplotlib</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/01_lending_credit_risk_sql.ipynb" target="_blank" rel="noopener">Notebook (SQL + Python) ↗</a><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/datasets/01-lending-credit-risk/sql/credit_risk_queries.sql" target="_blank" rel="noopener">SQL file ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 01 · Credit risk</div>
+      <h2>Digital lending credit risk in SQL</h2>
+      <p class="q">How risky is the loan book, which segments drive defaults, what loss should we expect on active loans, and which approval rule would have made the most money?</p></div>
+    <div class="kpis"><div class="kpi"><b>20.2%</b><span>default rate, mature loans</span></div><div class="kpi"><b>55.6%</b><span>default rate when instalment > 60% of income</span></div><div class="kpi"><b>Ksh 2.19M</b><span>expected loss, 10.9% of exposure</span></div><div class="kpi"><b>+Ksh 5.5M</b><span>best rule vs approving everyone</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Ran seven data quality checks in one SQL query: duplicates, invalid scores, orphan loans and repayments, status rules. All passed.</li>
+      <li>Avoided the right-censoring trap. Loans under 180 days old default at 16.0% only because they haven't had time to fail, so all risk figures use the 485 mature loans.</li>
+      <li>Broke default rates down by product, credit-score band, instalment-to-income ratio and occupation.</li>
+      <li>Tracked monthly vintages with a SQL window function for a 3-month rolling default rate, and computed PAR30 and PAR90 from the repayment schedule.</li>
+      <li>Estimated expected loss on the active book as PD × LGD × EAD, by product.</li>
+      <li>Priced three approval rules in shillings on the mature cohort, counting interest earned against principal lost.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 232" role="img" aria-label="Default rate by instalment to income ratio">
+  <line class="m-grid" x1="150.0" y1="8" x2="150.0" y2="198"/><text class="m-tick" x="150.0" y="214" text-anchor="middle">0%</text><line class="m-grid" x1="218.3" y1="8" x2="218.3" y2="198"/><text class="m-tick" x="218.3" y="214" text-anchor="middle">10%</text><line class="m-grid" x1="286.7" y1="8" x2="286.7" y2="198"/><text class="m-tick" x="286.7" y="214" text-anchor="middle">20%</text><line class="m-grid" x1="355.0" y1="8" x2="355.0" y2="198"/><text class="m-tick" x="355.0" y="214" text-anchor="middle">30%</text><line class="m-grid" x1="423.3" y1="8" x2="423.3" y2="198"/><text class="m-tick" x="423.3" y="214" text-anchor="middle">40%</text><line class="m-grid" x1="491.7" y1="8" x2="491.7" y2="198"/><text class="m-tick" x="491.7" y="214" text-anchor="middle">50%</text><line class="m-grid" x1="560.0" y1="8" x2="560.0" y2="198"/><text class="m-tick" x="560.0" y="214" text-anchor="middle">60%</text><text class="m-lab" x="138" y="32" text-anchor="end">Under 10%</text><rect class="m-dot" x="150.0" y="16" width="28.0" height="22" rx="2"/><text class="m-val" x="186.0" y="32">4.1%</text><text class="m-lab" x="138" y="70" text-anchor="end">10–20%</text><rect class="m-dot" x="150.0" y="54" width="89.5" height="22" rx="2"/><text class="m-val" x="247.5" y="70">13.1%</text><text class="m-lab" x="138" y="108" text-anchor="end">20–35%</text><rect class="m-dot" x="150.0" y="92" width="50.6" height="22" rx="2"/><text class="m-val" x="208.6" y="108">7.4%</text><text class="m-lab" x="138" y="146" text-anchor="end">35–60%</text><rect class="m-dot" x="150.0" y="130" width="82.7" height="22" rx="2"/><text class="m-val" x="240.7" y="146">12.1%</text><text class="m-lab" x="138" y="184" text-anchor="end">60% and over</text><rect class="m-hot" x="150.0" y="168" width="379.9" height="22" rx="2"/><text class="m-val" x="537.9" y="184">55.6%</text>
+  <text class="m-tick" x="355" y="230" text-anchor="middle">Default rate by instalment-to-income ratio, mature loans</text>
+</svg><figcaption>Affordability is the clearest risk signal: once the instalment passes 60% of monthly income, more than half of loans default.</figcaption></figure>
+    <div class="tbl"><table><thead><tr><th>Approval rule</th><th>Approved</th><th>Bad rate</th><th>Net value</th></tr></thead><tbody>
+      <tr><td>Approve everyone</td><td>100.0%</td><td>20.2%</td><td>Ksh 4.06M</td></tr>
+      <tr><td>Decline credit score under 550</td><td>81.6%</td><td>15.4%</td><td>Ksh 5.74M</td></tr>
+      <tr class="total"><td>Decline instalment over 60% of income</td><td>75.9%</td><td>9.0%</td><td>Ksh 9.58M</td></tr>
+      <tr><td>Decline either</td><td>63.9%</td><td>6.8%</td><td>Ksh 8.37M</td></tr>
+    </tbody></table></div>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>Add an affordability cap: decline instalments above 60% of income. It more than doubles net value while approving three in four applicants.</li>
+      <li>Don't stack it with the score cut-off. Declining either loses more good business than it saves.</li>
+      <li>Asset Finance defaults most (36.0%) and carries most of the expected loss, Ksh 1.53M of 2.19M. Review its terms first.</li>
+      <li>Report risk on mature loans only, and show vintages so a bad month like 2025-07 (50% default) is caught early.</li>
+    </ul></div>
+    <p class="more">The six SQL queries are on GitHub in <code>credit_risk_queries.sql</code>, with the database they run against.</p>
+  </div>
+</div></section>
+<section class="case" id="model"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">02</div>
+  <dl><dt>Data</dt><dd>The same lender database: 560 loans and 20,000 transactions, turned into one feature row per loan with SQL. Synthetic, generated with a fixed seed.</dd></dl>
+  <dl><dt>Method</dt><dd>Leakage checks, censoring, stratified split, baselines, logistic regression vs gradient boosting, ROC/KS, profit-based cut-off, fairness</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">SQL</span><span class="chip">pandas</span><span class="chip">Matplotlib</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/02_predicting_loan_default.ipynb" target="_blank" rel="noopener">Notebook ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 02 · Machine learning</div>
+      <h2>Predicting loan default</h2>
+      <p class="q">Can we rank applicants by default risk, and where should the approval cut-off sit to make the most money?</p></div>
+    <div class="kpis"><div class="kpi"><b>0.84</b><span>test AUC, logistic regression</span></div><div class="kpi"><b>0.56</b><span>KS statistic</span></div><div class="kpi"><b>72%</b><span>of defaults caught at the cut-off</span></div><div class="kpi"><b>−Ksh 1.59M → +462k</b><span>test-set profit, approve-all vs model</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Built one feature row per loan in SQL, including transaction activity in the 90 days before disbursement.</li>
+      <li>Caught leakage before modelling: <code>days_past_due</code> alone gave a perfect AUC of 1.0 because it's only known after the outcome. I removed it and <code>status</code>.</li>
+      <li>Kept only loans observed for at least 270 days (404 of 560) so unfinished loans aren't counted as good.</li>
+      <li>Set baselines every model had to beat: a constant prediction (AUC 0.50) and the credit score alone (AUC 0.74).</li>
+      <li>Compared logistic regression with gradient boosting using cross-validation. The simpler logistic model won on the held-out test set.</li>
+      <li>Chose the approval cut-off by expected profit on training folds, applied it once to the test set, and checked approval rates by gender and customer segment.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 194" role="img" aria-label="Test AUC by model">
+  <line class="m-grid" x1="150.0" y1="8" x2="150.0" y2="160"/><text class="m-tick" x="150.0" y="176" text-anchor="middle">0</text><line class="m-grid" x1="232.0" y1="8" x2="232.0" y2="160"/><text class="m-tick" x="232.0" y="176" text-anchor="middle">0.2</text><line class="m-grid" x1="314.0" y1="8" x2="314.0" y2="160"/><text class="m-tick" x="314.0" y="176" text-anchor="middle">0.4</text><line class="m-grid" x1="396.0" y1="8" x2="396.0" y2="160"/><text class="m-tick" x="396.0" y="176" text-anchor="middle">0.6</text><line class="m-grid" x1="478.0" y1="8" x2="478.0" y2="160"/><text class="m-tick" x="478.0" y="176" text-anchor="middle">0.8</text><line class="m-grid" x1="560.0" y1="8" x2="560.0" y2="160"/><text class="m-tick" x="560.0" y="176" text-anchor="middle">1</text><text class="m-lab" x="138" y="32" text-anchor="end">Constant baseline</text><rect class="m-dot" x="150.0" y="16" width="205.0" height="22" rx="2"/><text class="m-val" x="363.0" y="32">0.5</text><text class="m-lab" x="138" y="70" text-anchor="end">Credit score only</text><rect class="m-dot" x="150.0" y="54" width="303.4" height="22" rx="2"/><text class="m-val" x="461.4" y="70">0.74</text><text class="m-lab" x="138" y="108" text-anchor="end">Gradient boosting</text><rect class="m-dot" x="150.0" y="92" width="332.1" height="22" rx="2"/><text class="m-val" x="490.1" y="108">0.81</text><text class="m-lab" x="138" y="146" text-anchor="end">Logistic regression</text><rect class="m-hot" x="150.0" y="130" width="344.4" height="22" rx="2"/><text class="m-val" x="502.4" y="146">0.84</text>
+  <text class="m-tick" x="355" y="192" text-anchor="middle">AUC on held-out test loans (0.5 = no skill)</text>
+</svg><figcaption>Both models beat the credit score alone; logistic regression was best in cross-validation (AUC 0.84) and on the test set (AUC 0.84).</figcaption></figure>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>The instalment-to-income ratio is the strongest predictor, which matches Project 01's finding.</li>
+      <li>At the profit-based cut-off the model declines 38 of 122 test applicants and catches 18 of 25 defaults, turning a Ksh 1.59M loss into a Ksh 462k profit.</li>
+      <li>Women are approved at 0.89 times the rate of men, although both groups default at about the same rate (21% and 20%) in this sample. That passes the common four-fifths rule, but the gap should be explained before any use. The Mass segment's 17% approval rate (its loans default at 54%) needs a policy decision.</li>
+      <li>With only 404 usable loans, retrain and re-check once more loans mature.</li>
+    </ul></div>
+    <p class="note">The sample is small and synthetic, and active loans are treated as good, so these scores show method rather than production performance.</p>
+  </div>
+</div></section>
+<section class="case" id="mpesa"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">03</div>
+  <dl><dt>Data</dt><dd>A 24-month mobile-money statement, 5,085 raw rows in M-Pesa export format, with 12 planted anomalies. Synthetic, generated with a fixed seed.</dd></dl>
+  <dl><dt>Method</dt><dd>Text parsing, balance reconciliation, ordered keyword rules, RFM, log z-scores, back-tested trend forecast</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Regex</span><span class="chip">Matplotlib</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/03_mpesa_personal_finance.ipynb" target="_blank" rel="noopener">Notebook ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 03 · Fintech</div>
+      <h2>M-Pesa personal finance analytics</h2>
+      <p class="q">Where does the money go, is the account holder saving, which payments look unusual, who gets paid most, and what should next quarter's spending look like?</p></div>
+    <div class="kpis"><div class="kpi"><b>26.4%</b><span>savings rate over 24 months</span></div><div class="kpi"><b>5,045</b><span>clean rows of 5,085 raw</span></div><div class="kpi"><b>12 / 12</b><span>anomalies caught, 0 false alarms</span></div><div class="kpi"><b>27%</b><span>lower forecast error than naive</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Read the statement as text, parsed dates and money explicitly, and accounted for every row: 25 duplicates and 15 rejects with reasons, 5,045 clean rows. Checked each running balance against the row amounts.</li>
+      <li>Categorised transactions from the Details text with 16 ordered keyword rules. A naive rule list put 192 matatu fares under Savings because "Sacco" appears in both; rule order fixed it.</li>
+      <li>Split money into income, saving and spending: Ksh 3.43M in, Ksh 2.53M spent, a 26.4% savings rate, with 3 of 24 months spending more than came in.</li>
+      <li>Scored 74 payees on recency, frequency and money (RFM). 23 core partners take 55% of all money paid out.</li>
+      <li>Flagged unusual payments with z-scores within each category, then tuned the rule to cut false alarms from 41 to 0.</li>
+      <li>Fitted a spending trend, back-tested it against a naive "repeat the last three months" baseline, and forecast the next quarter with a range.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 200" role="img" aria-label="Payments flagged by three anomaly rules: planted anomalies caught versus false alarms">
+  <line class="m-grid" x1="176.0" y1="10" x2="176.0" y2="160"/><text class="m-tick" x="176.0" y="178" text-anchor="middle">0</text><line class="m-grid" x1="248.7" y1="10" x2="248.7" y2="160"/><text class="m-tick" x="248.7" y="178" text-anchor="middle">10</text><line class="m-grid" x1="321.5" y1="10" x2="321.5" y2="160"/><text class="m-tick" x="321.5" y="178" text-anchor="middle">20</text><line class="m-grid" x1="394.2" y1="10" x2="394.2" y2="160"/><text class="m-tick" x="394.2" y="178" text-anchor="middle">30</text><line class="m-grid" x1="466.9" y1="10" x2="466.9" y2="160"/><text class="m-tick" x="466.9" y="178" text-anchor="middle">40</text><line class="m-grid" x1="539.6" y1="10" x2="539.6" y2="160"/><text class="m-tick" x="539.6" y="178" text-anchor="middle">50</text><text class="m-lab" x="164" y="39" text-anchor="end">Raw amount, |z| > 3</text><rect class="m-hot" x="176.0" y="22" width="87.3" height="24" rx="2"/><rect class="m-dot" x="263.3" y="22" width="298.2" height="24" rx="2"/><text class="m-val" x="569.5" y="39">53</text><text class="m-lab" x="164" y="89" text-anchor="end">Log amount, |z| > 3</text><rect class="m-hot" x="176.0" y="72" width="87.3" height="24" rx="2"/><rect class="m-dot" x="263.3" y="72" width="58.2" height="24" rx="2"/><text class="m-val" x="329.5" y="89">20</text><text class="m-lab" x="164" y="139" text-anchor="end">Log z + over Ksh 10,000</text><rect class="m-hot" x="176.0" y="122" width="87.3" height="24" rx="2"/><text class="m-val" x="271.3" y="139">12</text>
+  <rect class="m-hot" x="176" y="186" width="12" height="12" rx="2"/><text class="m-tick" x="194" y="196">planted anomaly caught</text>
+  <rect class="m-dot" x="386" y="186" width="12" height="12" rx="2"/><text class="m-tick" x="404" y="196">false alarms</text>
+</svg><figcaption>Payments flagged by three anomaly rules. All three find the 12 planted anomalies; adding a log scale and a Ksh 10,000 materiality floor removes every false alarm.</figcaption></figure>
+    <div><h3>Forecast, tested before trusted</h3>
+      <p>Spending rises by about Ksh 849 a month, and December runs 1.65 times the trend. On held-out months the trend's average error was Ksh 11,362, against Ksh 15,666 for the naive baseline. The forecast for January to March 2026 is Ksh 87,600 to 89,300 a month, with a range of roughly ±Ksh 14,000.</p></div>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>Cash withdrawals are the largest category at 27%, so a quarter of spending is invisible. Tag cash and person-to-person transfers for one month.</li>
+      <li>Budget December as 1.65 times a normal month and set money aside in October and November.</li>
+      <li>Automate a Sacco transfer on salary day to smooth out the months with negative saving.</li>
+      <li>Send any payment with a high log z-score and over Ksh 10,000 to a confirm-or-dispute list.</li>
+    </ul></div>
+    <p class="note">The statement is synthetic and template-driven, so it shows method, not a real person's finances. Real statements contain other people's names and numbers, which should be masked before sharing.</p>
+  </div>
+</div></section>
+<section class="case" id="segments"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">04</div>
+  <dl><dt>Data</dt><dd>650 members of a SACCO or digital lender, described by seven behaviour measures: transactions, balances, loans, tenure, agent use and app logins. Synthetic, generated with a fixed seed.</dd></dl>
+  <dl><dt>Method</dt><dd>Log transform, scaling, k-means, silhouette against a random baseline, stability checks, PCA, segment profiles</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">pandas</span><span class="chip">Matplotlib</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/04_customer_segmentation.ipynb" target="_blank" rel="noopener">Notebook ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 04 · Machine learning</div>
+      <h2>Customer segmentation for a SACCO</h2>
+      <p class="q">Which natural groups of members exist, and what should the SACCO do differently for each?</p></div>
+    <div class="kpis"><div class="kpi"><b>4</b><span>segments, each with an action</span></div><div class="kpi"><b>0.465</b><span>silhouette score, against −0.03 for random groups</span></div><div class="kpi"><b>1.00</b><span>stability across random starts (ARI)</span></div><div class="kpi"><b>69%</b><span>of the variation shown on one 2-D map</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Built seven behaviour measures per member and log-transformed the skewed money and count columns, cutting the skew in average balance from 2.12 to 0.26.</li>
+      <li>Scaled every measure so that no single unit (shillings against app logins) dominates the distances between members.</li>
+      <li>Compared k-means for 2 to 8 groups. Four groups gave the best silhouette score, 0.465, against −0.03 for randomly assigned labels.</li>
+      <li>Tested stability: other random starts and a bootstrap model gave the same four groups (adjusted Rand index 1.0).</li>
+      <li>Checked the groups on a PCA map and wrote a profile in shillings and counts, with one action and one metric for each segment.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 308" role="img" aria-label="Silhouette score by number of segments">
+  <line class="m-grid" x1="150.0" y1="8" x2="150.0" y2="274"/><text class="m-tick" x="150.0" y="290" text-anchor="middle">0</text><line class="m-grid" x1="232.0" y1="8" x2="232.0" y2="274"/><text class="m-tick" x="232.0" y="290" text-anchor="middle">0.1</text><line class="m-grid" x1="314.0" y1="8" x2="314.0" y2="274"/><text class="m-tick" x="314.0" y="290" text-anchor="middle">0.2</text><line class="m-grid" x1="396.0" y1="8" x2="396.0" y2="274"/><text class="m-tick" x="396.0" y="290" text-anchor="middle">0.3</text><line class="m-grid" x1="478.0" y1="8" x2="478.0" y2="274"/><text class="m-tick" x="478.0" y="290" text-anchor="middle">0.4</text><line class="m-grid" x1="560.0" y1="8" x2="560.0" y2="274"/><text class="m-tick" x="560.0" y="290" text-anchor="middle">0.5</text><text class="m-lab" x="138" y="32" text-anchor="end">k = 2</text><rect class="m-dot" x="150.0" y="16" width="350.1" height="22" rx="2"/><text class="m-val" x="508.1" y="32">0.427</text><text class="m-lab" x="138" y="70" text-anchor="end">k = 3</text><rect class="m-dot" x="150.0" y="54" width="362.4" height="22" rx="2"/><text class="m-val" x="520.4" y="70">0.442</text><text class="m-lab" x="138" y="108" text-anchor="end">k = 4</text><rect class="m-hot" x="150.0" y="92" width="381.3" height="22" rx="2"/><text class="m-val" x="539.3" y="108">0.465</text><text class="m-lab" x="138" y="146" text-anchor="end">k = 5</text><rect class="m-dot" x="150.0" y="130" width="361.6" height="22" rx="2"/><text class="m-val" x="519.6" y="146">0.441</text><text class="m-lab" x="138" y="184" text-anchor="end">k = 6</text><rect class="m-dot" x="150.0" y="168" width="345.2" height="22" rx="2"/><text class="m-val" x="503.2" y="184">0.421</text><text class="m-lab" x="138" y="222" text-anchor="end">k = 7</text><rect class="m-dot" x="150.0" y="206" width="334.6" height="22" rx="2"/><text class="m-val" x="492.6" y="222">0.408</text><text class="m-lab" x="138" y="260" text-anchor="end">k = 8</text><rect class="m-dot" x="150.0" y="244" width="313.2" height="22" rx="2"/><text class="m-val" x="471.2" y="260">0.382</text>
+  <text class="m-tick" x="355" y="306" text-anchor="middle">Silhouette score by number of segments (higher = better separated)</text>
+</svg><figcaption>Four segments separate best. A random split into four groups scores −0.03, so the structure is real.</figcaption></figure>
+    <div class="tbl wraptext"><table><thead><tr><th>Segment</th><th>Members</th><th>Typical member (median)</th><th>Action</th><th>Track</th></tr></thead><tbody>
+      <tr><td>Power users</td><td>171</td><td>46 transactions a month, Ksh 23,500 balance, 39 app logins</td><td>Protect with fast support and fee tiers; cross-sell merchant accounts</td><td>transactions per month, churn</td></tr>
+      <tr><td>Savers</td><td>149</td><td>7 transactions a month, Ksh 88,700 balance, 40 months as a member</td><td>Offer fixed-deposit or goal-savings products; consider loans against savings</td><td>balance, savings uptake</td></tr>
+      <tr><td>Agent-reliant</td><td>150</td><td>12 transactions a month, 90% through agents, 2 app logins</td><td>Agent-assisted onboarding to the app; keep agent float healthy</td><td>app logins, agent share</td></tr>
+      <tr><td>Light users</td><td>180</td><td>5 transactions a month, Ksh 2,900 balance, 7 months as a member</td><td>A first-loan offer or airtime bonus for a second transaction</td><td>30-day reactivation</td></tr>
+    </tbody></table></div>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>Savers hold by far the largest balances but rarely transact: the natural audience for deposit and goal-savings products, and for loans secured on savings.</li>
+      <li>Agent-reliant members barely use the app. Moving them to it cuts agent costs, but only with agent-assisted onboarding.</li>
+      <li>Light users are the largest and newest group, so their first months decide whether they stay.</li>
+      <li>Treat each segment as a hypothesis: test its action on a sample of members before rolling it out.</li>
+    </ul></div>
+    <p class="note">Synthetic customers separate far more cleanly than real ones (the segments match the generator's hidden types 99.6%). Real members form a blurry continuum, so expect lower silhouette scores and review segments every quarter.</p>
+  </div>
+</div></section>
+<section class="case" id="insurance"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">05</div>
+  <dl><dt>Data</dt><dd>1,200 policies and 265 claims with injected defects (1,219 and 283 raw rows). Synthetic, generated with a fixed seed.</dd></dl>
+  <dl><dt>Method</dt><dd>Rules-as-data validation, quarantine, aggregate-then-join, rates with intervals</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">dataclasses</span><span class="chip">Regex</span><span class="chip">Matplotlib</span><span class="chip">Excel</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/05_insurance_data_quality.ipynb" target="_blank" rel="noopener">Notebook ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 05 · Insurance</div>
+      <h2>Insurance data quality and claim frequency</h2>
+      <p class="q">Which insurance records can be trusted, what is wrong with the rest, and what do the trusted records say about claim frequency by product?</p></div>
+    <div class="kpis"><div class="kpi"><b>1,168</b><span>clean policies of 1,219</span></div><div class="kpi"><b>222</b><span>claims accepted of 283</span></div><div class="kpi"><b>16</b><span>validation rules</span></div><div class="kpi"><b>3.15%</b><span>premium overstatement caught</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Wrote validation rules as data: a frozen <code>Rule</code> class with an ID, a test and a severity, so rules can be added or reviewed without touching the pipeline.</li>
+      <li>Split policies into clean and quarantined (15 duplicates, 36 quarantined), then joined claims only to clean policies.</li>
+      <li>Caught 10 re-keyed duplicate claims and 15 orphan claims that an ID check alone would miss.</li>
+      <li>Showed the join trap: joining claims back to policies before aggregating counts premium twice, overstating it by 3.15%. Aggregating first and joining one-to-one fixes it.</li>
+      <li>Computed frequency, severity and loss ratio with intervals, and delivered an exception workbook (scorecard, 61 policy and 53 claim exceptions) for the operations team.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 230" role="img" aria-label="Claim frequency per 100 policy-years with 95 percent intervals">
+  <line class="m-grid" x1="132.0" y1="10" x2="132.0" y2="194"/><text class="m-tick" x="132.0" y="212" text-anchor="middle">0</text><line class="m-grid" x1="228.5" y1="10" x2="228.5" y2="194"/><text class="m-tick" x="228.5" y="212" text-anchor="middle">10</text><line class="m-grid" x1="325.0" y1="10" x2="325.0" y2="194"/><text class="m-tick" x="325.0" y="212" text-anchor="middle">20</text><line class="m-grid" x1="421.6" y1="10" x2="421.6" y2="194"/><text class="m-tick" x="421.6" y="212" text-anchor="middle">30</text><line class="m-grid" x1="518.1" y1="10" x2="518.1" y2="194"/><text class="m-tick" x="518.1" y="212" text-anchor="middle">40</text><text class="m-lab" x="120" y="37.0" text-anchor="end">Medical</text><line class="m-ci" x1="394.5" y1="33.0" x2="507.5" y2="33.0"/><line class="m-ci" x1="394.5" y1="27.0" x2="394.5" y2="39.0"/><line class="m-ci" x1="507.5" y1="27.0" x2="507.5" y2="39.0"/><circle class="m-hotdot" cx="451.5" cy="33.0" r="6"/><text class="m-val" x="517.5" y="37.0">33.1</text><text class="m-lab" x="120" y="83.0" text-anchor="end">Motor Private</text><line class="m-ci" x1="298.0" y1="79.0" x2="383.0" y2="79.0"/><line class="m-ci" x1="298.0" y1="73.0" x2="298.0" y2="85.0"/><line class="m-ci" x1="383.0" y1="73.0" x2="383.0" y2="85.0"/><circle class="m-hotdot" cx="340.5" cy="79.0" r="6"/><text class="m-val" x="393.0" y="83.0">21.6</text><text class="m-lab" x="120" y="129.0" text-anchor="end">Home</text><line class="m-ci" x1="132.0" y1="125.0" x2="175.4" y2="125.0"/><line class="m-ci" x1="132.0" y1="119.0" x2="132.0" y2="131.0"/><line class="m-ci" x1="175.4" y1="119.0" x2="175.4" y2="131.0"/><circle class="m-hotdot" cx="153.2" cy="125.0" r="6"/><text class="m-val" x="185.4" y="129.0">2.2</text><text class="m-lab" x="120" y="175.0" text-anchor="end">Personal Accident</text><line class="m-ci" x1="132.0" y1="171.0" x2="164.8" y2="171.0"/><line class="m-ci" x1="132.0" y1="165.0" x2="132.0" y2="177.0"/><line class="m-ci" x1="164.8" y1="165.0" x2="164.8" y2="177.0"/><circle class="m-hotdot" cx="147.4" cy="171.0" r="6"/><text class="m-val" x="174.8" y="175.0">1.6</text>
+  <text class="m-tick" x="354" y="228" text-anchor="middle">Claims per 100 policy-years, approx. 95% interval</text>
+</svg><figcaption>Claim frequency by product with approximate 95% intervals. Home and Personal Accident are too rare to rank with confidence.</figcaption></figure>
+    <div class="tbl"><table><thead><tr><th>Product</th><th>Frequency / 100 policy-yrs</th><th>Avg claim (Ksh)</th><th>Loss ratio</th></tr></thead><tbody>
+      <tr><td>Medical</td><td>33.1</td><td>21,759</td><td>16.0%</td></tr>
+      <tr><td>Motor Private</td><td>21.6</td><td>58,719</td><td>43.5%</td></tr>
+      <tr><td>Home</td><td>2.2</td><td>170,108</td><td>27.4%</td></tr>
+      <tr><td>Personal Accident</td><td>1.6</td><td>47,054</td><td>6.4%</td></tr>
+    </tbody></table></div>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>Make policy and claim IDs mandatory at export, and add a re-keyed duplicate check at claims intake.</li>
+      <li>Route claims outside the cover period or above the sum insured to manual review.</li>
+      <li>Report frequency with intervals, not rankings. County rates overlap heavily, so no county should be singled out.</li>
+      <li>Only 83.8% of true claims survive validation, so every rate here is a lower bound.</li>
+    </ul></div>
+  </div>
+</div></section>
+<section class="case" id="retail"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">06</div>
+  <dl><dt>Data</dt><dd>8,000 sales lines, 20 products, 12 stores, plus a 144-row finance ledger. Synthetic, generated with a fixed seed.</dd></dl>
+  <dl><dt>Method</dt><dd>Cleaning log, validated merges, KPIs, Pareto, reconciliation</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Excel</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/06_shop_sales_reconciliation.ipynb" target="_blank" rel="noopener">Notebook ↗</a><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/excel/06_shop_sales_reconciliation.xlsx" target="_blank" rel="noopener">Excel workbook (formulas) ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 06 · Retail</div>
+      <h2>Shop sales and ledger reconciliation</h2>
+      <p class="q">What are the agreed revenue, margin and growth figures, which products and stores carry the business, and do the numbers match the finance ledger?</p></div>
+    <div class="kpis"><div class="kpi"><b>Ksh 4.87M</b><span>net revenue</span></div><div class="kpi"><b>17.8%</b><span>gross margin</span></div><div class="kpi"><b>6 / 6</b><span>validation checks passed</span></div><div class="kpi"><b>1.40×</b><span>December vs other months</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Inspected two messy extracts and wrote a data quality report before touching anything.</li>
+      <li>Cleaned with a row-count log: 8,035 raw rows, 35 duplicates removed, 19 rejects set aside with reasons (missing store, non-positive units, invalid date), 7,981 clean rows.</li>
+      <li>Proved the merge was safe: without a key check, a duplicated product inflated the table from 7,981 to 8,128 rows. With <code>validate=</code> the merge fails loudly instead.</li>
+      <li>Computed KPIs, monthly growth, a product Pareto, category margins and revenue per square metre by store.</li>
+      <li>Reconciled the pipeline to the finance ledger and wrote the outputs to Excel, reloading them to confirm.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 74" role="img" aria-label="7 of 20 products produce 80 percent of revenue">
+  <rect class="m-hot" x="0.0" y="0" width="26.2" height="34" rx="3"/><rect class="m-hot" x="30.2" y="0" width="26.2" height="34" rx="3"/><rect class="m-hot" x="60.4" y="0" width="26.2" height="34" rx="3"/><rect class="m-hot" x="90.6" y="0" width="26.2" height="34" rx="3"/><rect class="m-hot" x="120.8" y="0" width="26.2" height="34" rx="3"/><rect class="m-hot" x="151.0" y="0" width="26.2" height="34" rx="3"/><rect class="m-hot" x="181.2" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="211.4" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="241.6" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="271.8" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="302.0" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="332.2" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="362.4" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="392.6" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="422.8" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="453.0" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="483.2" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="513.4" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="543.6" y="0" width="26.2" height="34" rx="3"/><rect class="m-cool" x="573.8" y="0" width="26.2" height="34" rx="3"/>
+  <line class="m-axis" x1="0" y1="44" x2="207.4" y2="44"/>
+  <text class="m-lab" x="0" y="64">7 products · 80% of revenue</text>
+  <text class="m-lab m-dim" x="600" y="64" text-anchor="end">13 products · 20%</text>
+</svg><figcaption>Revenue concentration: 7 of 20 products make 80% of revenue; the top three alone make 60.2%.</figcaption></figure>
+    <div><h3>Ledger to pipeline bridge</h3>
+    <div class="tbl"><table><thead><tr><th>Step</th><th>Ksh</th></tr></thead><tbody>
+      <tr><td>Finance ledger total</td><td>4,964,731.30</td></tr>
+      <tr><td>Less rejected rows (documented)</td><td>−12,425.55</td></tr>
+      <tr class="flag"><td>Less unexplained posting, store ST07, Sept 2025</td><td>−85,000.00</td></tr>
+      <tr class="total"><td>Cleaned pipeline revenue</td><td>4,867,305.75</td></tr>
+    </tbody></table></div></div>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>Dairy and Eggs is the largest category by revenue (44.1%) but has the lowest margin (12.6%). Secure supply and pricing for the top products.</li>
+      <li>Margin falls from 20.5% on undiscounted lines to 0.8% at a 20% discount. Cap deep discounts.</li>
+      <li>Revenue per square metre ranges from 334 (Ruaka) to 164 (Nyali). Review selling space in the weakest store.</li>
+      <li>Plan stock and staff for December (1.40× other months) and weekends (1.19× weekdays).</li>
+      <li>Ask finance to explain the Ksh 85,000 posting in ST07 before the figures are signed off.</li>
+    </ul></div>
+    <p class="note">The data is synthetic and the findings describe that data only. The method, checks and reconciliation are what transfer to real books.</p>
+  </div>
+</div></section>
+<section class="morehead"><div class="wrap"><div class="eyebrow">More projects</div><h2>Public data and operations</h2><p>Two more end-to-end projects: real World Bank and Our World in Data figures, and production analytics for a workshop.</p></div></section>
+<section class="case" id="kenya"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">07</div>
+  <dl><dt>Data</dt><dd>World Bank GDP, population and inflation, plus Our World in Data CO₂. Real public data, CC BY 4.0 and ODC-PDDL.</dd></dl>
+  <dl><dt>Method</dt><dd>Country filtering, one-to-one merges, CAGR, rolling volatility, peer ranking</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/07_kenya_public_data.ipynb" target="_blank" rel="noopener">Notebook ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 07 · Macroeconomics</div>
+      <h2>Kenya against six regional peers</h2>
+      <p class="q">How has income per person grown, how stable have prices been, and how does Kenya compare with Uganda, Rwanda, Tanzania, Ethiopia, Nigeria and South Africa?</p></div>
+    <div class="kpis"><div class="kpi"><b>US$1,941</b><span>GDP per person in 2023, up from US$415 in 2000</span></div><div class="kpi"><b>4.6%</b><span>real growth a year, 2nd of 7</span></div><div class="kpi"><b>8.0%</b><span>mean inflation, 3rd highest</span></div><div class="kpi"><b>27.7%</b><span>peak inflation, 2009</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Loaded four public files (about 59,000 rows) and kept countries only, using ISO codes and logging every dropped row.</li>
+      <li>Merged on country and year with a one-to-one check: 10,920 rows in and 10,920 out, with population totals reconciled.</li>
+      <li>Computed GDP per person, real growth (deflated by US prices), five-year blocks and rolling inflation volatility.</li>
+      <li>Checked outliers before ranking: Uganda's 85.4% inflation in 2009 was excluded from the peer comparison only.</li>
+      <li>Turned the result into a lending question: what a fixed-rate loan earns once inflation is taken out.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 340" role="img" aria-label="Mean inflation versus real GDP per person growth, 2000 to 2023, seven countries">
+  <line class="m-grid" x1="52.0" y1="18" x2="52.0" y2="288"/><text class="m-tick" x="52.0" y="306" text-anchor="middle">4%</text><line class="m-grid" x1="140.0" y1="18" x2="140.0" y2="288"/><text class="m-tick" x="140.0" y="306" text-anchor="middle">6%</text><line class="m-grid" x1="228.0" y1="18" x2="228.0" y2="288"/><text class="m-tick" x="228.0" y="306" text-anchor="middle">8%</text><line class="m-grid" x1="316.0" y1="18" x2="316.0" y2="288"/><text class="m-tick" x="316.0" y="306" text-anchor="middle">10%</text><line class="m-grid" x1="404.0" y1="18" x2="404.0" y2="288"/><text class="m-tick" x="404.0" y="306" text-anchor="middle">12%</text><line class="m-grid" x1="492.0" y1="18" x2="492.0" y2="288"/><text class="m-tick" x="492.0" y="306" text-anchor="middle">14%</text><line class="m-grid" x1="580.0" y1="18" x2="580.0" y2="288"/><text class="m-tick" x="580.0" y="306" text-anchor="middle">16%</text><line class="m-grid" x1="52" y1="288.0" x2="580" y2="288.0"/><text class="m-tick" x="44" y="292.0" text-anchor="end">0%</text><line class="m-grid" x1="52" y1="198.0" x2="580" y2="198.0"/><text class="m-tick" x="44" y="202.0" text-anchor="end">3%</text><line class="m-grid" x1="52" y1="108.0" x2="580" y2="108.0"/><text class="m-tick" x="44" y="112.0" text-anchor="end">6%</text><line class="m-grid" x1="52" y1="18.0" x2="580" y2="18.0"/><text class="m-tick" x="44" y="22.0" text-anchor="end">9%</text>
+  <text class="m-tick" x="316" y="330" text-anchor="middle">Mean inflation, 2000–2023</text>
+  <text class="m-tick" transform="translate(14 153) rotate(-90)" text-anchor="middle">Real growth per person, a year</text>
+  <circle class="m-dot" cx="100.4" cy="174.0" r="5"/><text class="m-lab" x="92.4" y="178.0" text-anchor="end">Uganda</text><circle class="m-dot" cx="148.8" cy="171.0" r="5"/><text class="m-lab" x="156.8" y="165.0" text-anchor="start">Rwanda</text><circle class="m-dot" cx="157.6" cy="276.0" r="5"/><text class="m-lab" x="165.6" y="280.0" text-anchor="start">South Africa</text><circle class="m-dot" cx="184.0" cy="210.0" r="5"/><text class="m-lab" x="192.0" y="214.0" text-anchor="start">Tanzania</text><circle class="m-hotdot" cx="228.0" cy="150.0" r="7"/><text class="m-lab m-strong" x="237.0" y="154.0" text-anchor="start">Kenya</text><circle class="m-dot" cx="386.4" cy="216.0" r="5"/><text class="m-lab" x="394.4" y="220.0" text-anchor="start">Nigeria</text><circle class="m-dot" cx="496.4" cy="42.0" r="5"/><text class="m-lab" x="487.4" y="46.0" text-anchor="end">Ethiopia</text>
+</svg><figcaption>Growth against price stability, 2000–2023. Kenya grows faster than most peers, with mid-table inflation.</figcaption></figure>
+    <div><h3>Lending illustration</h3>
+      <p>A fixed 16% loan (an illustrative rate) would have earned a real yield between −11.7 and +15.1 points across the period, falling below zero in two years. Keeping a 6-point real margin needs about 12.6% nominal at median inflation and 19.6% at the 90th percentile.</p></div>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>Price loans for inflation volatility, not only average inflation.</li>
+      <li>Stress-test affordability in high-inflation years: 4 of 24 years were at 10% or more.</li>
+      <li>Compare countries on a shared time window. Over 2010–2023 Kenya's volatility rank moves to 5th of 7.</li>
+      <li>CO₂ per dollar of GDP fell 76% since 2000. Treat it as background context, not a credit signal.</li>
+    </ul></div>
+    <p class="note">These are questions to test with current data, not lending decisions.</p>
+  </div>
+</div></section>
+<section class="case" id="workshop"><div class="wrap">
+  <aside class="rail">
+  <div class="no num">08</div>
+  <dl><dt>Data</dt><dd>Six months of shift logs (2,367 rows) from a five-machine metal workshop in Nairobi's Industrial Area, typed by hand. Synthetic, generated with a fixed seed.</dd></dl>
+  <dl><dt>Method</dt><dd>Cleaning log, OEE, bottleneck analysis, downtime Pareto, change-week detection, scrap loss in shillings</dd></dl>
+  <dl><dt>Tools</dt><dd class="chips"><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></dd></dl>
+  <dl class="code"><dt>Code, step by step</dt><dd><a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/blob/main/notebooks/08_workshop_production_oee.ipynb" target="_blank" rel="noopener">Notebook ↗</a></dd></dl>
+</aside>
+  <div class="main">
+    <div><div class="eyebrow">Project 08 · Operations</div>
+      <h2>Workshop production and OEE</h2>
+      <p class="q">Output is slipping and the scrap bin is filling. Which machine, shift and cause is behind it, and what should the owner fix first?</p></div>
+    <div class="kpis"><div class="kpi"><b>83.3%</b><span>plant OEE: availability × performance × quality</span></div><div class="kpi"><b>Mill</b><span>the bottleneck, and the lowest OEE at 79.7%</span></div><div class="kpi"><b>2×</b><span>Mill downtime after its change week</span></div><div class="kpi"><b>5.4%</b><span>Grinder scrap on nights, against 1.4–1.6% by day</span></div></div>
+    <div><h3>What I did</h3><ol class="steps">
+      <li>Cleaned a hand-typed log: found 24 spellings of five machine names and repaired them, standardised shift names, removed 12 duplicates and set aside 19 impossible rows with reasons (2,336 clean rows of 2,367).</li>
+      <li>Measured <strong>OEE</strong> (overall equipment effectiveness) for each machine: the share of planned time it ran, its speed against the standard cycle, and the share of good pieces.</li>
+      <li>Found the bottleneck from good output per shift against what each machine should make: the Mill.</li>
+      <li>Ranked downtime causes in a Pareto chart: setups and tool changes are 60% of all lost minutes.</li>
+      <li>Flagged any machine running above 1.5 times its own downtime baseline for a sustained period: the Mill, from the week of 1 September 2025.</li>
+      <li>Costed scrap in shillings by machine and shift.</li>
+    </ol></div>
+    <figure><svg viewBox="0 0 600 156" role="img" aria-label="Grinder scrap rate by shift">
+  <line class="m-grid" x1="150.0" y1="8" x2="150.0" y2="122"/><text class="m-tick" x="150.0" y="138" text-anchor="middle">0%</text><line class="m-grid" x1="218.3" y1="8" x2="218.3" y2="122"/><text class="m-tick" x="218.3" y="138" text-anchor="middle">1%</text><line class="m-grid" x1="286.7" y1="8" x2="286.7" y2="122"/><text class="m-tick" x="286.7" y="138" text-anchor="middle">2%</text><line class="m-grid" x1="355.0" y1="8" x2="355.0" y2="122"/><text class="m-tick" x="355.0" y="138" text-anchor="middle">3%</text><line class="m-grid" x1="423.3" y1="8" x2="423.3" y2="122"/><text class="m-tick" x="423.3" y="138" text-anchor="middle">4%</text><line class="m-grid" x1="491.7" y1="8" x2="491.7" y2="122"/><text class="m-tick" x="491.7" y="138" text-anchor="middle">5%</text><line class="m-grid" x1="560.0" y1="8" x2="560.0" y2="122"/><text class="m-tick" x="560.0" y="138" text-anchor="middle">6%</text><text class="m-lab" x="138" y="32" text-anchor="end">Morning</text><rect class="m-dot" x="150.0" y="16" width="98.4" height="22" rx="2"/><text class="m-val" x="256.4" y="32">1.44%</text><text class="m-lab" x="138" y="70" text-anchor="end">Afternoon</text><rect class="m-dot" x="150.0" y="54" width="107.3" height="22" rx="2"/><text class="m-val" x="265.3" y="70">1.57%</text><text class="m-lab" x="138" y="108" text-anchor="end">Night</text><rect class="m-hot" x="150.0" y="92" width="368.3" height="22" rx="2"/><text class="m-val" x="526.3" y="108">5.39%</text>
+  <text class="m-tick" x="355" y="154" text-anchor="middle">Grinder scrap rate by shift, April to September 2025</text>
+</svg><figcaption>The Grinder scraps more than three times as many pieces on the night shift, costing about Ksh 0.9M of its Ksh 1.4M scrap loss.</figcaption></figure>
+    <div class="tbl"><table><thead><tr><th>Machine</th><th>OEE</th><th>Scrap rate</th><th>Share of scrap loss</th></tr></thead><tbody>
+      <tr><td>Saw</td><td>86.2%</td><td>0.62%</td><td>10.5%</td></tr>
+      <tr><td>Lathe</td><td>83.3%</td><td>1.25%</td><td>10.6%</td></tr>
+      <tr class="flag"><td>Mill (bottleneck)</td><td>79.7%</td><td>1.49%</td><td>11.6%</td></tr>
+      <tr><td>Drill</td><td>84.0%</td><td>1.83%</td><td>26.9%</td></tr>
+      <tr class="total"><td>Grinder</td><td>82.3%</td><td>2.79%</td><td>40.4%</td></tr>
+    </tbody></table></div>
+    <div><h3>Findings and recommendations</h3><ul class="recs">
+      <li>From 1 September the Mill lost 73 minutes a shift to downtime instead of 37, and tool changes rose from 28% to 58% of it. Inspect its cutters, inserts and coolant now.</li>
+      <li>Protect the bottleneck: do setups and tool changes between batches and keep spare tooling at the Mill, because a minute lost there is lost for the whole line.</li>
+      <li>Review first-piece inspection, lighting and handover on the Grinder's night shift, the largest single source of scrap cost.</li>
+      <li>Alert when any machine runs above 1.5 times its own downtime baseline for three weeks, and use drop-down lists for machine and shift names at data entry.</li>
+    </ul></div>
+    <p class="note">The data is synthetic, with the Mill problem and the night-shift problem planted so the method has something to find. Shilling values per piece are illustrative.</p>
+  </div>
+</div></section>
+<section class="skills"><div class="wrap">
+  <div class="eyebrow">How I work</div>
+  <div class="grid4">
+    <div><h3>Check before trusting</h3><p>Quality reports, row-count logs and assertions run before any number is reported.</p></div>
+    <div><h3>Reconcile to the books</h3><p>Every pipeline total is bridged back to the source, so finance can sign it off.</p></div>
+    <div><h3>Show the uncertainty</h3><p>Rates come with intervals, and findings state what the data can and cannot support.</p></div>
+    <div><h3>Explain it plainly</h3><p>Each project ends in recommendations a manager can act on, in plain language.</p></div>
+  </div>
+  <p class="more" style="margin-top:28px">The <a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/tree/main/notebooks" target="_blank" rel="noopener">step-by-step notebooks</a> and <a href="https://github.com/meritaanalytics/meritaanalytics-portfolio/tree/main/datasets" target="_blank" rel="noopener">datasets</a> for all eight projects are on GitHub, and longer walkthroughs are in my free handbook, <a href="https://merita-analytics-data-science.netlify.app/part-19" target="_blank" rel="noopener">Data Science from Zero to Advanced</a>.</p>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Let's talk.</h2>
+  <p>I'm open to data analyst, credit risk analyst, graduate trainee and internship roles in Kenya. Email is the best way to reach me.</p>
+  <div class="row">
+    <span class="mail" id="mail">benmuru29@gmail.com</span>
+    <button class="btn" type="button" id="copy">Copy email</button>
+    <a class="btn" href="https://www.linkedin.com/in/benson-merita/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Benson M. Merita · MeritaAnalytics</span><span>Project 07 uses public World Bank and Our World in Data sources; all other projects use synthetic data.</span></div></footer>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var b=this, t=document.getElementById('mail').textContent;
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1600)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press Ctrl+C'}
+  try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+});
+</script>
+
+</body>
+</html>

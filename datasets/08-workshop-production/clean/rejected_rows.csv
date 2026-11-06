@@ -1,0 +1,20 @@
+log_id,date,shift,machine,part,planned_min,ideal_cycle_sec,downtime_min,downtime_reason,actual_cycle_sec,total_pieces,scrap_pieces,unit_value_ksh,reason
+W00016,2025-04-02,Morning,Saw,Shaft,450,45.0,900.0,Operator absent,50.6,505,3,259.0,downtime above planned time
+W00170,2025-04-14,Morning,Grinder,Shaft,450,100.0,8.0,Waiting for material,106.0,250,253,528.74,scrap exceeds output
+W00367,2025-04-29,Afternoon,Lathe,Bracket,450,93.5,900.0,Breakdown,98.8,263,1,190.89,downtime above planned time
+W00559,2025-05-14,Morning,Drill,Shaft,450,90.0,75.0,Setup / changeover,97.5,2300,7,463.55,output over 1.5x theory
+W00579,2025-05-15,Afternoon,Drill,Bracket,450,76.5,900.0,Setup / changeover,84.5,304,3,263.95,downtime above planned time
+W00689,2025-05-23,Night,Drill,Shaft,450,90.0,46.0,Breakdown,100.9,2400,3,456.82,output over 1.5x theory
+W00811,2025-06-03,Morning,Saw,Shaft,450,45.0,33.0,Breakdown,50.1,4990,5,255.56,output over 1.5x theory
+W01118,2025-06-26,Afternoon,Mill,Shaft,450,140.0,58.0,Setup / changeover,161.6,145,148,424.08,scrap exceeds output
+W01350,,Night,Grinder,Bracket,450,85.0,74.0,Tool change,0.0,234,17,298.75,invalid date
+W01492,,Afternoon,Lathe,Shaft,450,110.0,50.0,Breakdown,128.5,186,3,339.14,invalid date
+W01553,2025-07-30,Afternoon,Mill,Flange,450,175.0,30.0,Tool change,180.4,139,142,611.66,scrap exceeds output
+W01635,2025-08-05,Night,Grinder,Bracket,450,85.0,900.0,Breakdown,93.5,287,16,298.02,downtime above planned time
+W01655,,Morning,Grinder,Shaft,450,100.0,48.0,Tool change,102.7,234,4,526.29,invalid date
+W01867,,Afternoon,Lathe,Bracket,450,93.5,26.0,Tool change,103.0,246,6,195.68,invalid date
+W01912,2025-08-27,Afternoon,Lathe,Shaft,450,110.0,24.0,Waiting for material,120.7,2110,1,332.31,output over 1.5x theory
+W02022,2025-09-04,Night,Lathe,Flange,450,137.5,7.0,Breakdown,159.4,1660,2,491.78,output over 1.5x theory
+W02282,2025-09-25,Morning,Lathe,Shaft,450,110.0,43.0,Tool change,119.1,205,208,334.49,scrap exceeds output
+W02302,2025-09-26,Afternoon,Lathe,Flange,450,137.5,3.0,Breakdown,155.3,172,175,507.12,scrap exceeds output
+W02345,2025-09-30,Morning,Grinder,Flange,450,125.0,12.0,Breakdown,132.5,1980,3,804.79,output over 1.5x theory
